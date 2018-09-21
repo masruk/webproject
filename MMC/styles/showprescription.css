@@ -1,0 +1,45 @@
+
+#showprescription{border-collapse: collapse;}
+
+#showprescription td{ padding: 8px;   border-bottom: 1px solid #ddd; }
+#showprescription th{ padding: 8px;  border-bottom: 1px solid #ddd;}
+
+#pres_div {padding: 40px 5% 10px 5%;}
+#prescription-list{}
+#prescription-list ul{list-style-type:none;}
+#prescription-list ul li{}
+#prescription-list ul li a{padding: 5px 8px;}
+
+#prescription-id-list{
+    list-style-type: none;
+}
+#prescription-id-list li{
+
+}
+
+#prescription-id-list li input[type="submit"]{
+    border: none;
+    width:90%;
+    padding: 5px 10px;
+    margin-bottom: 3px;
+    background-color: #38b25b;
+    color: white;
+}
+
+#prescription-id-list li input[type="submit"]:hover{
+
+    background-color: #1ef35c;
+    font-weight:600;
+    color: white;
+}
+
+#search-box {
+    display: inline-block;
+}
+
+#no-bordered-table {border: 0 !important;}
+#no-bordered-table tr{border: 0 !important;}
+#no-bordered-table tr td{border: 0 !important; padding:2px !important;}
+#no-bordered-table tr th{border: 0 !important; padding:2px !important;}
+#desease-info tr{height:20px;margin: 0;}
+
