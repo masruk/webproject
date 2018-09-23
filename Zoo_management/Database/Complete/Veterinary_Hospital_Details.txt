@@ -1,0 +1,16 @@
+CREATE TABLE Veterinary_Hospital_Details
+(
+VHS_Id VARCHAR2(50),
+VHS_Section_Id VARCHAR2(30),
+CONSTRAINT VHD_VHS_Id_fk FOREIGN KEY(VHS_Id) REFERENCES Veterinary_Hospital_Section(VHS_Id),
+CONSTRAINT VHD_VHS_Section_Id_fk FOREIGN KEY(VHS_Section_Id) REFERENCES V_H_Sub_Section(VHS_Section_Id)
+);
+
+SELECT * FROM Veterinary_Hospital_Details
+INSERT INTO Veterinary_Hospital_Details(VHS_Id,VHS_Section_Id) VALUES('VHS-0001','VHS-SUB-A-1');
+INSERT INTO Veterinary_Hospital_Details(VHS_Id,VHS_Section_Id) VALUES('VHS-0002','VHS-SUB-B-1');
+INSERT INTO Veterinary_Hospital_Details(VHS_Id,VHS_Section_Id) VALUES('VHS-0003','VHS-SUB-C-1');
+INSERT INTO Veterinary_Hospital_Details(VHS_Id,VHS_Section_Id) VALUES('VHS-0004','VHS-SUB-D-1');
+INSERT INTO Veterinary_Hospital_Details(VHS_Id,VHS_Section_Id) VALUES('VHS-0005','VHS-SUB-E-1');
+INSERT INTO Veterinary_Hospital_Details(VHS_Id,VHS_Section_Id) VALUES('VHS-0006','VHS-SUB-F-1');
+

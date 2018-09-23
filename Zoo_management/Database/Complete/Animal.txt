@@ -1,0 +1,133 @@
+﻿CREATE TABLE Animal
+(
+Animal_Id VARCHAR2(20),
+Bengali_Name NVARCHAR2(60) NOT NULL,
+English_Name VARCHAR2(60) NOT NULL,
+Gender VARCHAR2(20),
+Date_Of_Birth DATE,
+CONSTRAINT Animal_Animal_Id_pk PRIMARY KEY(Animal_Id)
+);
+
+
+INSERT INTO Animal(Animal_Id,Bengali_Name,English_Name,Gender,Date_Of_Birth)
+VALUES('RBT-1','রয়েল বেঙ্গল টাইগার-১',' Royel Bengal Tiger-1','Male',to_date('02-11-2005','dd-mm-yyyy'));
+INSERT INTO Animal(Animal_id,Bengali_name,English_name,Gender,date_of_birth)
+values('RBT-2','রয়েল বেঙ্গল টাইগার-২',' Royel Bengal Tiger-2','Female',to_date('22-11-2006','dd-mm-yyyy'));
+INSERT INTO Animal(Animal_id,Bengali_name,English_name,Gender,date_of_birth)
+values('RBT-3','রয়েল বেঙ্গল টাইগার-৩',' Royel Bengal Tiger-3','Male',to_date('20-09-2006','dd-mm-yyyy'));
+INSERT INTO Animal(Animal_id,Bengali_name,English_name,Gender,date_of_birth)
+values('RBT-4','রয়েল বেঙ্গল টাইগার-৪',' Royel Bengal Tiger-4','Female',to_date('22-11-2004','dd-mm-yyyy'));
+INSERT INTO Animal(Animal_id,Bengali_name,English_name,Gender,date_of_birth)
+values('RBT-5','রয়েল বেঙ্গল টাইগার-৫',' Royel Bengal Tiger-5','Male',to_date('21-12-2003','dd-mm-yyyy'));
+INSERT INTO Animal(Animal_id,Bengali_name,English_name,Gender,date_of_birth)
+values('AWL-1','আফ্রিকান সাদা সিংহ-১', 'African White Lion-1','Male',to_date('22-11-2006','dd-mm-yyyy'));
+INSERT INTO Animal(Animal_id,Bengali_name,English_name,Gender,date_of_birth)
+values('AWL-2','আফ্রিকান সাদা সিংহ-২', 'African White Lion-2','Female',to_date('22-11-2006','dd-mm-yyyy'));
+INSERT INTO Animal(Animal_id,Bengali_name,English_name,Gender,date_of_birth)
+values('INL-1','ভারতীয় সিংহ-১', 'Indian Lion-1','Male',to_date('22-11-2006','dd-mm-yyyy'));
+INSERT INTO Animal(Animal_id,Bengali_name,English_name,Gender,date_of_birth)
+values('INL-2','ভারতীয় সিংহ-২', 'Indian Lion-2','Female',to_date('22-11-2006','dd-mm-yyyy'));
+INSERT INTO Animal(Animal_id,Bengali_name,English_name,Gender,date_of_birth)
+values('INL-3','ভারতীয় সিংহ-৩', 'Indian Lion-3','Female',to_date('22-11-2006','dd-mm-yyyy'));
+INSERT INTO Animal(Animal_id,Bengali_name,English_name,Gender)
+values('JKL-1','শিয়াল','Jackel','Unidentified');
+INSERT INTO Animal(Animal_id,Bengali_name,English_name,Gender)
+values('SDH-1','চিত্রা হায়েনা','Spotted Hyeana','Unidentified');
+INSERT INTO Animal(Animal_id,Bengali_name,English_name,Gender)
+values('STH-1','ডোরাকাটা হায়েনা','Stripped Hyeana','Unidentified');
+INSERT INTO Animal(Animal_id,Bengali_name,English_name,Gender,date_of_birth)
+values('AE-1','এশিয়ান হাতি-১','Asiatic Elephant-1','Male',to_date('12-03-2008','dd-mm-yyyy'));
+INSERT INTO Animal(Animal_id,Bengali_name,English_name,Gender,date_of_birth)
+values('AE-2','এশিয়ান হাতি-২','Asiatic Elephant-2','Female',to_date('14-02-2009','dd-mm-yyyy'));
+INSERT INTO Animal(Animal_id,Bengali_name,English_name,Gender,date_of_birth)
+values('GFE-1','জিরাফ-১','Giraffe-1','Male',to_date('18-09-2011','dd-mm-yyyy'));
+INSERT INTO Animal(Animal_id,Bengali_name,English_name,Gender,date_of_birth)
+values('GFE-2','জিরাফ-২','Giraffe-2','Female',to_date('22-11-2010','dd-mm-yyyy'));
+INSERT INTO Animal(Animal_id,Bengali_name,English_name,Gender,date_of_birth)
+values('GFE-3','জিরাফ-৩','Giraffe-3','Female',to_date('11-11-2011','dd-mm-yyyy'));
+INSERT INTO Animal(Animal_id,Bengali_name,English_name,Gender)
+values('DR-1','মায়া হরিণ ', 'Barking Deer','Unidentified');
+INSERT INTO Animal(Animal_id,Bengali_name,English_name,Gender)
+values('DR-2',' চিত্রা হরিণ  ','Spotted Deer','Unidentified');
+INSERT INTO Animal(Animal_id,Bengali_name,English_name,Gender,date_of_birth)
+values('HR-1',' ঘোড়া-১','Horse-1','Male',to_date('11-11-2009','dd-mm-yyyy'));
+INSERT INTO Animal(Animal_id,Bengali_name,English_name,Gender,date_of_birth)
+values('HR-2',' ঘোড়া-২','Horse-2','Female',to_date('18-09-2011','dd-mm-yyyy'));
+INSERT INTO Animal(Animal_id,Bengali_name,English_name,Gender,date_of_birth)
+values('HR-3',' ঘোড়া-৩','Horse-3','Female',to_date('11-11-2011','dd-mm-yyyy'));
+INSERT INTO Animal(Animal_id,Bengali_name,English_name,Gender)
+values('ZB-1','জেব্রা','Common Zebra','Unidentified');
+INSERT INTO Animal(Animal_id,Bengali_name,English_name,Gender)
+values('RH-1','আফ্রিকান গন্ডার','African Rhinoceros','Unidentified');
+INSERT INTO Animal(Animal_id,Bengali_name,English_name,Gender)
+values('HP-1','জলহস্তী','Hippopotamus','Unidentified');
+INSERT INTO Animal(Animal_id,Bengali_name,English_name,Gender)
+values('OS-1','উটপাখী','Ostrich','Unidentified');
+INSERT INTO Animal(Animal_id,Bengali_name,English_name,Gender)
+values('EM-1','ইমু','Emu','Unidentified');
+INSERT INTO Animal(Animal_id,Bengali_name,English_name,Gender)
+values('LAJ-1','মদন টেক','Lesser Adjutant','Unidentified');
+INSERT INTO Animal(Animal_id,Bengali_name,English_name,Gender)
+values('BNH-1','কালো গলা বক','Black necked Heron','Unidentified');
+INSERT INTO Animal(Animal_id,Bengali_name,English_name,Gender)
+values('PHN-1','কানি বক','Pond Heron','Unidentified');
+INSERT INTO Animal(Animal_id,Bengali_name,English_name,Gender)
+values('CEG-1','গো-বক','Cattle Egret','Unidentified');
+INSERT INTO Animal(Animal_id,Bengali_name,English_name,Gender)
+values('GCM-1','বড় পানকৌড়ি','Greater Cormorant','Unidentified');
+INSERT INTO Animal(Animal_id,Bengali_name,English_name,Gender)
+values('LCM-1','ছোট পানকৌড়ি','Little Cormorant','Unidentified');
+INSERT INTO Animal(Animal_id,Bengali_name,English_name,Gender)
+values('JLP-1','জালালী কবুতর','Jalali Pigeon','Unidentified');
+INSERT INTO Animal(Animal_id,Bengali_name,English_name,Gender)
+values('BRP-1','দেশী কবুতর','Indian B R Piegon','Unidentified');
+INSERT INTO Animal(Animal_id,Bengali_name,English_name,Gender)
+values('CPL-1','নীল ময়ুর','Common Peafowl','Unidentified');
+INSERT INTO Animal(Animal_id,Bengali_name,English_name,Gender)
+values('WHC-1','সাদা কাক','White Crow','Unidentified');
+INSERT INTO Animal(Animal_id,Bengali_name,English_name,Gender)
+values('HLM-1','ময়না','Hill Mynah','Unidentified');
+INSERT INTO Animal(Animal_id,Bengali_name,English_name,Gender)
+values('MPR-1','দোয়েল','Magpie Robin','Unidentified');
+INSERT INTO Animal(Animal_id,Bengali_name,English_name,Gender)
+values('KNF-1','মাছরাঙা','King Fisher','Unidentified');
+INSERT INTO Animal(Animal_id,Bengali_name,English_name,Gender)
+values('CB-1','কোবরা/গোখরা সাপ','Cobra','Unidentified');
+INSERT INTO Animal(Animal_id,Bengali_name,English_name,Gender)
+values('IPT-1','অজগর','Indian Python','Unidentified');
+INSERT INTO Animal(Animal_id,Bengali_name,English_name,Gender)
+values('TT-1','কচ্ছপ','Tortoise','Unidentified');
+INSERT INTO Animal(Animal_id,Bengali_name,English_name,Gender)
+values('MC-1','মার্স কুমির','Marsh Crocodile','Unidentified');
+INSERT INTO Animal(Animal_id,Bengali_name,English_name,Gender)
+values('EC-1','ইশ্চুরিয়ান কুমির','Esturiane Crocodile','Unidentified');
+INSERT INTO Animal(Animal_id,Bengali_name,English_name,Gender)
+values('GL-1','ঘড়িয়াল','Gharial/Ghavial','Unidentified');
+INSERT INTO Animal(Animal_id,Bengali_name,English_name,Gender)
+values('TKC-1','টাইগার কৈ কাপ','Tiger Kai Carp','Unidentified');
+INSERT INTO Animal(Animal_id,Bengali_name,English_name,Gender)
+values('KC-1','কৈ কার্প','Kai Carp','0','0','13');
+INSERT INTO Animal(Animal_id,Bengali_name,English_name,Gender)
+values('SMF-1','শিং মাছ','Singh Fish','Unidentified');
+INSERT INTO Animal(Animal_id,Bengali_name,English_name,Gender)
+values('NHF-1','ফলি মাছ','Night Fish','Unidentified');
+INSERT INTO Animal(Animal_id,Bengali_name,English_name,Gender)
+values('OSK-1','অস্কার','Oskar','10','10','16');
+INSERT INTO Animal(Animal_id,Bengali_name,English_name,Gender)
+values('SDL-1','সিল্ভার ডলার','Silver Dollar','Unidentified');
+INSERT INTO Animal(Animal_id,Bengali_name,English_name,Gender)
+values('PNH-1','পিরানহা','Piranha','Unidentified');
+INSERT INTO Animal(Animal_id,Bengali_name,English_name,Gender)
+values('DG-1','গিনিপিগ','Domestic Guineapig','Unidentified');
+INSERT INTO Animal(Animal_id,Bengali_name,English_name,Gender)
+values('RB-1','খরপগোশ','Rabbit','Unidentified');
+INSERT INTO Animal(Animal_id,Bengali_name,English_name,Gender)
+values('HGB-1','উল্লুক','Hoolock Gibbon','Unidentified');
+INSERT INTO Animal(Animal_id,Bengali_name,English_name,Gender)
+values('SQL-1',' কাঠবিড়ালী','Squirrel','Unidentified');
+INSERT INTO Animal(Animal_id,Bengali_name,English_name,Gender)
+values('KNG-1','ক্যাংগারো','Kangaroo','Unidentified');
+INSERT INTO Animal(Animal_id,Bengali_name,English_name,Gender)
+values('PCP-1','সজারু','Indian Porcupine','Unidentified');
+INSERT INTO Animal(Animal_id,Bengali_name,English_name,Gender)
+values('BT-1','ভল্লুক বিড়াল','Binturong','Unidentified');

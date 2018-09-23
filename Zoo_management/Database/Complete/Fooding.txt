@@ -1,0 +1,26 @@
+CREATE TABLE Fooding
+(
+Animal_Id VARCHAR2(20),
+Food_Id VARCHAR2(20),
+CONSTRAINT Fooding_Animal_Id_fk FOREIGN KEY(Animal_Id) REFERENCES Animal(Animal_Id),
+CONSTRAINT Fooding_Food_Id_fk FOREIGN KEY(Food_Id) REFERENCES Food(Food_Id)
+);
+
+SELECT * FROM Fooding
+INSERT INTO Fooding(Animal_Id,Food_Id) VALUES('RBT-1','Fd-0001');
+INSERT INTO Fooding(Animal_Id,Food_Id) VALUES('RBT-2','Fd-0002');
+INSERT INTO Fooding(Animal_Id,Food_Id) VALUES('RBT-3','Fd-0003');
+INSERT INTO Fooding(Animal_Id,Food_Id) VALUES('RBT-4','Fd-0004');
+INSERT INTO Fooding(Animal_Id,Food_Id) VALUES('RBT-5','Fd-0005');
+INSERT INTO Fooding(Animal_Id,Food_Id) VALUES('AWL-1','Fd-0006');
+INSERT INTO Fooding(Animal_Id,Food_Id) VALUES('AWL-2','Fd-0007');
+INSERT INTO Fooding(Animal_Id,Food_Id) VALUES('INL-1','Fd-0008');
+INSERT INTO Fooding(Animal_Id,Food_Id) VALUES('INL-2','Fd-0009');
+INSERT INTO Fooding(Animal_Id,Food_Id) VALUES('AE-1','Fd-0010');
+INSERT INTO Fooding(Animal_Id,Food_Id) VALUES('AE-2','Fd-0011');
+INSERT INTO Fooding(Animal_Id,Food_Id) VALUES('HR-1','Fd-0012');
+INSERT INTO Fooding(Animal_Id,Food_Id) VALUES('HR-2','Fd-0013');
+INSERT INTO Fooding(Animal_Id,Food_Id) VALUES('HR-3','Fd-0014');
+INSERT INTO Fooding(Animal_Id,Food_Id) VALUES('RH-1','Fd-0015');
+INSERT INTO Fooding(Animal_Id,Food_Id) VALUES('HP-1','Fd-0016');
+INSERT INTO Fooding(Animal_Id,Food_Id) VALUES('GFE-1','Fd-0017');

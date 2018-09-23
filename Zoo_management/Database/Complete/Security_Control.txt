@@ -1,0 +1,30 @@
+CREATE TABLE Security_Control
+(
+Control_Id VARCHAR2(20),
+Location VARCHAR2(20),
+Control_Type VARCHAR2(20),
+CONSTRAINT SC_Control_Type_pk PRIMARY KEY(Control_Id)
+);
+
+SELECT * FROM Security_Control
+
+INSERT INTO Security_Control(Control_Id,Location,Control_Type)
+VALUES('SC-01','Polash','Check Post-01');
+
+INSERT INTO Security_Control(Control_Id,Location,Control_Type)
+VALUES('SC-02','Polash','CCTV-01');
+
+INSERT INTO Security_Control(Control_Id,Location,Control_Type)
+VALUES('SC-03','Voirob','Check Post-02');
+
+INSERT INTO Security_Control(Control_Id,Location,Control_Type)
+VALUES('SC-04','Voirob','CCTV-02');
+
+INSERT INTO Security_Control(Control_Id,Location,Control_Type)
+VALUES('SC-05','Dolon','Check Post-03');
+
+INSERT INTO Security_Control(Control_Id,Location,Control_Type)
+VALUES('SC-06','Dolon','CCTV-03');
+
+
+

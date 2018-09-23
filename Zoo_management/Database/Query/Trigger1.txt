@@ -1,0 +1,47 @@
+		
+UPDATE Cage
+SET NO_OF_ANIMAL='0'
+WHERE Cage_No='Cg-0011';		
+		
+		'table is secured'
+
+
+CREATE TRIGGER empty_cage
+AFTER UPDATE OF No_Of_Animal
+ON Cage
+when (:)
+BEGIN
+
+    DECLARE
+    counter varchar2(20);
+    BEGIN
+        SELECT No_Of_Animal INTO counter FROM Cage WHERE No_Of_Animal='0';
+        IF(counter='0')
+        THEN
+            RAISE_APPLICATION_ERROR(-20343,'Cage is empty!');
+        END IF;
+    END;
+END;
+
+CREATE OR REPLACE TRIGGER EMPTY_CAGE 
+AFTER UPDATE OF NO_OF_ANIMAL ON CAGE 
+FOR EACH ROW 
+WHEN (:NEW.NO_OF_ANIMAL=0) 
+BEGIN
+    NULL;
+END;
+
+
+
+
+SET SERVEROUTPUT ON;
+create or replace ex_employee_trigger before delete on employee
+for each row 
+begin
+insert into ExEmployee values
+(:OLD.Employee_Id ,:OLD.Name, :OLD.Date_Of_Birth ,
+:OLD.Designation ,:OLD.Salary ,:OLD.City ,:OLD.Street_No ,
+:OLD.Street_Name ,:OLD.House_No ,:OLD.Joining_Date ,
+:OLD.Grade );final_project
+
+END;

@@ -1,0 +1,20 @@
+CREATE TABLE Cage
+(
+Cage_No VARCHAR2(20),
+Chamber_No VARCHAR2(20),
+No_Of_Animal VARCHAR2(20),
+CONSTRAINT Cage_Cage_No_pk PRIMARY KEY(cage_No)
+);
+
+SELECT * FROM Cage
+INSERT INTO Cage(Cage_No,Chamber_No,No_Of_Animal) VALUES('Cg-0001','Cmbr-0001','1');
+INSERT INTO Cage(Cage_No,Chamber_No,No_Of_Animal) VALUES('Cg-0002','Cmbr-0001','1');
+INSERT INTO Cage(Cage_No,Chamber_No,No_Of_Animal) VALUES('Cg-0003','Cmbr-0001','1');
+INSERT INTO Cage(Cage_No,Chamber_No,No_Of_Animal) VALUES('Cg-0004','Cmbr-0001','1');
+INSERT INTO Cage(Cage_No,Chamber_No,No_Of_Animal) VALUES('Cg-0005','Cmbr-0001','2');
+INSERT INTO Cage(Cage_No,Chamber_No,No_Of_Animal) VALUES('Cg-0006','Cmbr-0001','1');
+INSERT INTO Cage(Cage_No,Chamber_No,No_Of_Animal) VALUES('Cg-0007','Cmbr-0001','4');
+INSERT INTO Cage(Cage_No,Chamber_No,No_Of_Animal) VALUES('Cg-0008','Cmbr-0001','2');
+INSERT INTO Cage(Cage_No,No_Of_Animal) VALUES('Cg-0009','1');
+INSERT INTO Cage(Cage_No,No_Of_Animal) VALUES('Cg-0010','1');
+

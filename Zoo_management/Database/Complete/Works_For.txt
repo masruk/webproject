@@ -1,0 +1,15 @@
+CREATE TABLE Works_For
+(
+Animal_Id VARCHAR2(20),
+Employee_Id VARCHAR2(20),
+CONSTRAINT Works_For_Animal_Id_fk FOREIGN KEY(Animal_Id) REFERENCES Animal(Animal_Id),
+CONSTRAINT Works_For_Employee_Id_fk FOREIGN KEY(Employee_Id) REFERENCES Employee(Employee_Id)
+);
+
+SELECT * FROM Works_For
+INSERT INTO Works_For(Animal_Id,Employee_Id) VALUES('RBT-1','E-AN0001');
+INSERT INTO Works_For(Animal_Id,Employee_Id) VALUES('INL-1','E-AN0002');
+INSERT INTO Works_For(Animal_Id,Employee_Id) VALUES('AE-2','E-AN0003');
+INSERT INTO Works_For(Animal_Id,Employee_Id) VALUES('RH-1','E-AN0004');
+INSERT INTO Works_For(Animal_Id,Employee_Id) VALUES('AWL-1','E-AN0005');
+INSERT INTO Works_For(Animal_Id,Employee_Id) VALUES('HR-2','E-AN0006');

@@ -1,0 +1,297 @@
+
+body{
+	
+	/* zoo, password */
+	font-family:arial;
+	font-size: 15px;
+	line-height:1.5em;
+	background-color: white;
+	width:99%;
+	margin: 0px auto;
+	background-color: #cceeff;
+	
+}
+
+#content{
+	min-height: 345px;
+	background-color: #cceeff;
+	padding: 5px 0px;
+	overflow: auto;
+	
+	
+}
+
+#container{
+	position: relative;
+	margin: 0px auto;
+	padding:0;
+	overflow: auto;
+	width:99.20%;
+	
+}
+
+header{
+	background-color:  #008040;
+	padding: 10px;
+	margin: 0;
+	overflow: auto;
+}
+
+#logo{
+	
+	float: left;
+	margin: 15px 60px 0px 35px;
+	height: 105px;
+	width: 105px;
+}
+#add_data,#delete_data,#update_data
+{
+	background-color:#e6fff5;
+}
+
+header #logo img{
+	
+	
+	height: 100%;
+	width: 100%;
+	border-radius: 100%;
+		
+}
+#zoo_name{
+	
+	float: left;
+	
+}
+
+header #zoo_name p{
+	
+	color: yellow;
+	font-size: 260%;
+	font-weight: 600;
+}
+
+#login_section{
+	
+	
+	float: left;
+	overflow: auto;
+} 
+#login_section{
+	float: right;
+	margin: 20px 20px 2px 2px;
+	font-size: 112%;
+	color:  #ccffe6;
+}
+#login_section input[type="text"]
+{
+	margin: 5px;
+	padding: 2px 2px 2px 4px;
+	font-weight: 400;
+	
+}
+
+#login_section input[type="text""password"]:focus{
+	
+	background-color:  #79d2a6;
+	color: #262626;
+}
+
+nav{
+	background-color: #c1f0f0;
+	margin: 0px auto;
+	overflow: auto;
+	padding: 6px;
+	text-align: center;
+	font-size: 120%;
+}
+nav ul{
+	
+	margin: 0px;
+	list-style-type: none;
+	display: inline;
+	
+}
+nav ul li{
+	display: inline;
+	padding: 0px;
+	margin: 0px;
+}
+nav ul li a{
+	text-decoration: none;
+	padding: 7px 8px;
+	margin: 0px;
+	color: #004d4d;
+}
+nav ul li a:hover{
+	background-color: #008060;
+	color: #e6fff9;
+}
+
+#edit{
+	
+	background-color:#e6fff5;
+}
+
+
+
+
+/*
+#page-name{
+	
+	padding: 35px 0 0 25px;
+	width: 300px;
+	height: 65px;
+	margin: 15px 5px;
+	font-size: 335%;
+	font-weight:600;
+	overflow: auto;
+	border: 1px solid green;
+}
+
+#page-name p{
+	
+	color:#ffff00;
+	
+} */
+
+
+#page-name{
+	width:400px;
+	margin: 20px;
+	
+	
+}
+
+#page-name h1{
+	position: relative;
+	padding: 35px 25px;
+	font-size:330%;
+	color: white;
+	text-shadow: 6px 1px 5px #990099,7px 0px 6px #66ffff;
+	box-shadow: 3px 0px 15px #990099;
+	border-radius:5px;
+	font-weight:700;
+	font-style: italic;
+	transition: box-shadow 0.3s, text-shadow 0.3s;
+}
+
+#page-name h1:hover{
+	box-shadow: 0px 0px 20px  #990099;
+	text-shadow: 4px 1px 5px #990099,10px 1px 8px #66ffff;
+	cursor:pointer;
+	
+}
+
+
+
+
+
+
+#data_input{
+
+	max-width: 96%;
+	overflow: auto;
+	margin:5px auto;
+	overflow:auto;
+	font-size: 80%;
+	color: blue;
+	
+}
+
+#data_input input[type="text"]{
+	
+	position:relative;
+	padding: 1px 8px;
+	height: 30px;
+	width:86px;
+	font-size:100%;
+	background-color:#00B3B3 ;
+	color: #000000;
+}
+
+
+#data_input input[type="text"]:focus{
+	
+	background-color:#008080;
+	color: #e6ffff;
+	
+	
+	
+}
+#in{
+	
+	position:relative;
+	padding: 2px 2px;
+	height: 30px;
+	width:60% !important;
+	font-size:100%;
+	background-color:#00B3B3 ;
+	color: #000000;
+}
+#data_input input[type="submit"]
+{
+	height:35px;
+	width:75px;
+	color: #e6f7ff;
+	background-color: #005580;
+	
+}
+
+input[value="Close"]{
+	
+	background-color: yellow;
+	color: red;
+	padding: 3px 4px;
+	float: right;
+}
+
+#confirm{
+	
+	font-size: 130%;
+	color: red;
+}
+
+
+caption{
+	font-size: 210%;
+	color: #ff3300;
+	font-weight: 600;
+	margin: 5px 5px 15px 5px;
+	text-decoration: underline;
+	
+}
+
+#entity_table{
+	
+	margin: 30px auto 20px auto;
+	padding:10px 5px 15px 5px;
+	width: 75%;
+	border: 2px solid #00b3b3;
+	border-radius: 6px;
+	text-align:center;
+}
+
+#entity_table th{
+	padding: 8px 0px;
+	border: 2px solid #006666;
+	color: #001a1a;
+	font-size:120%;
+}
+
+#entity_table tr{
+	
+	background-color:  #00b3b3;
+	border-bottom: 1px dotted #00e6e6;
+	
+}
+
+#entity_table td{
+	padding:6px 9px;
+}
+footer{
+	background-color: #0E1017;
+	color: #595959;
+	text-align: center;
+	padding: 40px 30px 40px 30px;
+	
+}

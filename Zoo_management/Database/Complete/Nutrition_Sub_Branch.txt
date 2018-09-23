@@ -1,0 +1,30 @@
+CREATE TABLE Nutrition_Sub_Branch
+(
+NSB_Id VARCHAR2(20),
+Treatment_Catagory VARCHAR2(30),
+Block_No VARCHAR2(20),
+Area_Name VARCHAR2(20),
+Area VARCHAR2(20),
+Total_Lab NUMBER(20),
+CONSTRAINT NSB_NSB_Id_pk PRIMARY KEY(NSB_Id),
+CONSTRAINT NSB_Total_Lab_ck CHECK(Total_Lab>=0)
+);
+
+SELECT * FROM Nutrition_Sub_Branch
+INSERT INTO Nutrition_Sub_Branch(NSB_Id,Treatment_Catagory,Block_No,Area_Name,Area,Total_Lab)
+VALUES('NSB-001','Carnivorous','A','Shimul','Southern','6');
+
+INSERT INTO Nutrition_Sub_Branch(NSB_Id,Treatment_Catagory,Block_No,Area_Name,Area,Total_Lab)
+VALUES('NSB-002','Herbivores','B','Kanchi','Western','3');
+
+INSERT INTO Nutrition_Sub_Branch(NSB_Id,Treatment_Catagory,Block_No,Area_Name,Area,Total_Lab)
+VALUES('NSB-003','Mammals','C','Taimur','Eastern','2');
+
+INSERT INTO Nutrition_Sub_Branch(NSB_Id,Treatment_Catagory,Block_No,Area_Name,Area,Total_Lab)
+VALUES('NSB-004','Reptiles','D','Virat','SouthEast','4');
+
+INSERT INTO Nutrition_Sub_Branch(NSB_Id,Treatment_Catagory,Block_No,Area_Name,Area,Total_Lab)
+VALUES('NSB-005','Bird','E','Afridi','NorthEast','5');
+
+INSERT INTO Nutrition_Sub_Branch(NSB_Id,Treatment_Catagory,Block_No,Area_Name,Area,Total_Lab)
+VALUES('NSB-006','Fish','F','Bokum','Northern','6');

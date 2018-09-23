@@ -1,0 +1,13 @@
+CREATE TABLE Fish_Treatment
+(
+Spot_No VARCHAR2(20),
+VHS_Id VARCHAR2(20),
+Unit VARCHAR2(20),
+CONSTRAINT Fish_Treatment_Spot_No_fk FOREIGN KEY(Spot_No) REFERENCES Angling(Spot_No),
+CONSTRAINT Fish_Treatment_VHS_Id_fk FOREIGN KEY(VHS_Id) REFERENCES Veterinary_Hospital_Section(VHS_Id)
+);
+
+SELECT * FROM Fish_Treatment
+INSERT INTO Fish_Treatment(Spot_No,VHS_Id,Unit) VALUES('SP_01','VHS-0006','VTA-001');
+INSERT INTO Fish_Treatment(Spot_No,VHS_Id,Unit) VALUES('SP_02','VHS-0006','VTA-002');
+INSERT INTO Fish_Treatment(Spot_No,VHS_Id,Unit) VALUES('SP_03','VHS-0006','VTA-003');

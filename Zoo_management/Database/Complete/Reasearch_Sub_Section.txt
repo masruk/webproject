@@ -1,0 +1,14 @@
+CREATE TABLE Reasearch_Sub_Section
+(
+RADS_Section_Id VARCHAR2(20),
+Reasearch_Catagory VARCHAR2(20),
+Total_Lab VARCHAR2(20),
+Block_No VARCHAR2(20),
+Area_Name VARCHAR2(20),
+Area VARCHAR2(20),
+CONSTRAINT Reasearch_Sec_RADS_Sec_Id_pk PRIMARY KEY(RADS_Section_Id)
+);
+
+SELECT * FROM Reasearch_Sub_Section
+INSERT INTO Reasearch_Sub_Section(RADS_Section_Id,Reasearch_Catagory,Total_Lab,Block_No,Area_Name,Area)
+VALUES('RADS-0001A','Carnivorous','5','2A','polash','Northern');

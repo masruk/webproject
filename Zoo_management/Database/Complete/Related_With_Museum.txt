@@ -1,0 +1,17 @@
+CREATE TABLE Related_With_Museum
+(
+Employee_Id VARCHAR2(20),
+Museum_Id VARCHAR2(20),
+CONSTRAINT Rel_With_Mus_Emp_Id_fk FOREIGN KEY(Employee_Id) REFERENCES Employee(Employee_Id),
+CONSTRAINT Rel_With_Mus_Mus_Id_fk FOREIGN KEY(Museum_Id) REFERENCES Museum(Museum_Id)
+);
+
+SELECT  * FROM Related_With_Museum
+INSERT INTO Related_With_Museum(Employee_Id,Museum_Id)
+VALUES('E-MS0001','MS-001');
+
+INSERT INTO Related_With_Museum(Employee_Id,Museum_Id)
+VALUES('E-MS0002','MS-002');
+
+INSERT INTO Related_With_Museum(Employee_Id,Museum_Id)
+VALUES('E-MS0003','MS-003');

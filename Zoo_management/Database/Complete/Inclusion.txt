@@ -1,0 +1,26 @@
+CREATE TABLE Inclusion
+(
+Cage_No VARCHAR2(20),
+Addition_No VARCHAR2(20),
+CONSTRAINT inclution_cage_No_fk FOREIGN KEY(cage_No) REFERENCES cage(cage_No),
+CONSTRAINT inclution_Addition_No_fk FOREIGN KEY(Addition_No) REFERENCES addition(Addition_No)
+);
+
+SELECT * FROM Inclusion
+INSERT INTO Inclusion(Cage_No,Addition_No) 
+VALUES('Cg-0001','AD-0001');
+
+INSERT INTO Inclusion(Cage_No,Addition_No) 
+VALUES('Cg-0002','AD-0002');
+
+INSERT INTO Inclusion(Cage_No,Addition_No) 
+VALUES('Cg-0003','AD-0003');
+
+INSERT INTO Inclusion(Cage_No,Addition_No) 
+VALUES('Cg-0005','AD-0004');
+
+INSERT INTO Inclusion(Cage_No,Addition_No) 
+VALUES('Cg-0007','AD-0006');
+
+INSERT INTO Inclusion(Cage_No,Addition_No) 
+VALUES('Cg-0009','AD-0007');

@@ -1,0 +1,193 @@
+CREATE TABLE Employee
+(
+Employee_Id VARCHAR2(20),
+Name VARCHAR2(20) NOT NULL,
+Date_Of_Birth DATE,
+Designation VARCHAR2(40),
+Salary VARCHAR2(20),
+City VARCHAR2(20),
+Street_No VARCHAR2(20),
+Street_Name VARCHAR2(30),
+House_No VARCHAR2(20),
+Joining_Date DATE NOT NULL,
+Grade VARCHAR2(20),
+CONSTRAINT Employee_Employee_Id_pk PRIMARY KEY(Employee_Id),
+CONSTRAINT Employee_Salary_ck CHECK(Salary>0)
+);
+
+
+INSERT INTO Employee(Employee_Id,Name,Date_Of_Birth,Designation,Salary,City,Street_No,Street_Name,House_No,Joining_Date,Grade)
+VALUES('E-AD0001','Md.Milan Khan',to_date('08-01-1977','DD-MM-YYYY'),'Curator','70000','Tangail','05','Tajuddin Road','05A',to_date('10-01-2000','DD-MM-YYYY'),'3');
+
+INSERT INTO Employee(Employee_Id,Name,Date_Of_Birth,Designation,Salary,City,Street_No,Street_Name,House_No,Joining_Date,Grade)
+VALUES('E-A0001','Md. Mahbub Karim',to_date('08-01-1977','DD-MM-YYYY'),'Curator','101','Tangail','05','Tajuddin Road','05A',to_date('10-01-2000','DD-MM-YYYY'),'3');
+
+INSERT INTO Employee(Employee_Id,Name,Date_Of_Birth,Designation,Salary,City,Street_No,Street_Name,House_No,Joining_Date,Grade)
+VALUES('E-AD0002','Md.Miraj Sharif',to_date('08-04-1982','DD-MM-YYYY'),'Senior Admin Officer','70000','Siraj','01','Mohsin Road','07B',to_date('01-01-2002','DD-MM-YYYY'),'2');
+
+INSERT INTO Employee(Employee_Id,Name,Date_Of_Birth,Designation,Salary,City,Street_No,Street_Name,House_No,Joining_Date,Grade)
+VALUES('E-AD0003','Junaid Azam ',to_date('18-02-1986','DD-MM-YYYY'),'Admin Officer','42000','Chittagaon','18','Moulana Road','05A',to_date('03-03-2011','DD-MM-YYYY'),'2');
+
+
+INSERT INTO Employee(Employee_Id,Name,Date_Of_Birth,Designation,Salary,City,Street_No,Street_Name,House_No,Joining_Date,Grade)
+VALUES('E-AC0001','Mahendra De',to_date('28-01-1979','DD-MM-YYYY'),'Account Manager','55000','Tangail','05','Vogoban Road','05A',to_date('07-01-2005','DD-MM-YYYY'),'4');
+
+INSERT INTO Employee(Employee_Id,Name,Date_Of_Birth,Designation,Salary,City,Street_No,Street_Name,House_No,Joining_Date,Grade)
+VALUES('E-AC0002','Zillur Rahman',to_date('18-04-1987','DD-MM-YYYY'),'Credit Officer','24000','Natore','09','Nabi Road','07C',to_date('10-01-2013','DD-MM-YYYY'),'4');
+
+INSERT INTO Employee(Employee_Id,Name,Date_Of_Birth,Designation,Salary,City,Street_No,Street_Name,House_No,Joining_Date,Grade)
+VALUES('E-VH0001','Saeed Anwar',to_date('25-11-1974','DD-MM-YYYY'),'Vaternary Doctor','100000','Dhaka','05','Ajad Sarani','05A',to_date('10-01-2005','DD-MM-YYYY'),'2');
+
+INSERT INTO Employee(Employee_Id,Name,Date_Of_Birth,Designation,Salary,City,Street_No,Street_Name,House_No,Joining_Date,Grade)
+VALUES('E-VH0002','Md.Milan Monwar',to_date('18-5-1987','DD-MM-YYYY'),'Cheif Assistant Doctor','45000','Iswardi','14','Awal Road','06A',to_date('05-02-2012','DD-MM-YYYY'),'2');
+
+
+INSERT INTO Employee(Employee_Id,Name,Date_Of_Birth,Designation,Salary,City,Street_No,Street_Name,House_No,Joining_Date,Grade)
+VALUES('E-VH0003','Mahamud Hossain',to_date('21-06-1987','DD-MM-YYYY'),'Assistant','25000','Tangail','06','Tajuddin Road','05B',to_date('03-01-2003','DD-MM-YYYY'),'4');
+
+
+INSERT INTO Employee(Employee_Id,Name,Date_Of_Birth,Designation,Salary,City,Street_No,Street_Name,House_No,Joining_Date,Grade)
+VALUES('E-NT0001','Mishba-Ul-Hauqe',to_date('23-12-1973','DD-MM-YYYY'),'Cheif Nutrationist','62500','Uttara','12','Jasimuddin Road','07F',to_date('02-01-2005','DD-MM-YYYY'),'2');
+
+INSERT INTO Employee(Employee_Id,Name,Date_Of_Birth,Designation,Salary,City,Street_No,Street_Name,House_No,Joining_Date,Grade)
+VALUES('E-NT0002','Md.Milan Monwar',to_date('18-5-1987','DD-MM-YYYY'),'Assistant Nutrationist','34500','Iswardi','14','Kkatala Road','06A',to_date('07-03-2012','DD-MM-YYYY'),'2');
+
+
+INSERT INTO Employee(Employee_Id,Name,Date_Of_Birth,Designation,Salary,City,Street_No,Street_Name,House_No,Joining_Date,Grade)
+VALUES('E-NT0003','Mahamud Hossain',to_date('21-06-1987','DD-MM-YYYY'),'Assistant','22500','Tangail','05','Tamijuddin Road','05B',to_date('10-01-2003','DD-MM-YYYY'),'4');
+
+
+INSERT INTO Employee(Employee_Id,Name,Date_Of_Birth,Designation,Salary,City,Street_Name,House_No,Joining_Date,Grade)
+VALUES('E-SC0001','Md.Milan Khan',to_date('18-10-1977','DD-MM-YYYY'),'Cheif Security Officer','13750','Kustia','Arshi Road','07D',to_date('10-06-1999','DD-MM-YYYY'),'14');
+
+
+INSERT INTO Employee(Employee_Id,Name,Date_Of_Birth,Designation,Salary,City,Street_Name,House_No,Joining_Date,Grade)
+VALUES('E-SC0002','Ilias Kanchan',to_date('20-12-1981','DD-MM-YYYY'),'Security Officer','11750','Rangpur','Ataullah Road','11R',to_date('10-04-2004','DD-MM-YYYY'),'14');
+
+
+INSERT INTO Employee(Employee_Id,Name,Date_Of_Birth,Designation,Salary,City,Street_Name,House_No,Joining_Date,Grade)
+VALUES('E-SC0003','Imran Nazir',to_date('29-01-1992','DD-MM-YYYY'),'Security Guard','8750','Barisal','Payra Road','35A',to_date('05-05-2014','DD-MM-YYYY'),'14');
+
+
+INSERT INTO Employee(Employee_Id,Name,Date_Of_Birth,Designation,Salary,City,Street_Name,House_No,Joining_Date,Grade)
+VALUES('E-PS0001','Rabiul Islam',to_date('08-01-1982','DD-MM-YYYY'),'Picnic Spot Manager','45000','Kustia','Pagla Road','05A',to_date('10-06-2009','DD-MM-YYYY'),'6');
+
+
+INSERT INTO Employee(Employee_Id,Name,Date_Of_Birth,Designation,Salary,City,Street_No,Street_Name,House_No,Joining_Date,Grade)
+VALUES('E-PS0002','Salauddin Kader',to_date('21-06-1989','DD-MM-YYYY'),'Picnic Spot Assistant Manager','37500','Rangamati','09','Mama Road','099B',to_date('10-01-2014','DD-MM-YYYY'),'6');
+
+INSERT INTO Employee(Employee_Id,Name,Date_Of_Birth,Designation,Salary,City,Street_No,Street_Name,House_No,Joining_Date,Grade)
+VALUES('E-PS0003','Kuber Das',to_date('21-06-1991','DD-MM-YYYY'),'Picnic Spot Supervisor','17500','Narayangonj','09','Osmani Road','08C',to_date('10-04-2014','DD-MM-YYYY'),'11');
+
+INSERT INTO Employee(Employee_Id,Name,Date_Of_Birth,Designation,Salary,City,Street_Name,House_No,Joining_Date,Grade)
+VALUES('E-BR0001','Farhan Akhtar',to_date('08-07-1981','DD-MM-YYYY'),'Boat Ridding Manager','37500','Kustia','Isswar Gonj','05A',to_date('10-06-2008','DD-MM-YYYY'),'6');
+
+
+INSERT INTO Employee(Employee_Id,Name,Date_Of_Birth,Designation,Salary,City,Street_Name,House_No,Joining_Date,Grade)
+VALUES('E-BR0002','Kalam Sheik',to_date('12-12-1988','DD-MM-YYYY'),'Boat Ridding Assistant Manager','29500','Isswardi','Kawakhali','099B',to_date('10-01-2014','DD-MM-YYYY'),'6');
+
+INSERT INTO Employee(Employee_Id,Name,Date_Of_Birth,Designation,Salary,City,Street_Name,House_No,Joining_Date,Grade)
+VALUES('E-BR0003','Soumya Sarkar',to_date('23-06-1991','DD-MM-YYYY'),'Boat Ridding Supervisor','16500','Jessor','Osmani Road','08C',to_date('10-04-2014','DD-MM-YYYY'),'11');
+
+INSERT INTO Employee(Employee_Id,Name,Date_Of_Birth,Designation,Salary,City,Street_Name,House_No,Joining_Date,Grade)
+VALUES('E-AG0001','Aslam Talukdar',to_date('08-01-1982','DD-MM-YYYY'),'Angaling Manager','35000','Kustia','Vuiya Road','05A',to_date('10-04-2008','DD-MM-YYYY'),'6');
+
+
+INSERT INTO Employee(Employee_Id,Name,Date_Of_Birth,Designation,Salary,City,Street_No,Street_Name,House_No,Joining_Date,Grade)
+VALUES('E-AG0002','Koushik Vodro',to_date('11-06-1989','DD-MM-YYYY'),'Angaling Assistant Manager','27500','Rangamati','09','Kolyan Road','099B',to_date('10-01-2014','DD-MM-YYYY'),'6');
+
+INSERT INTO Employee(Employee_Id,Name,Date_Of_Birth,Designation,Salary,City,Street_Name,House_No,Joining_Date,Grade)
+VALUES('E-AG0003','Montu Bayen',to_date('21-06-1991','DD-MM-YYYY'),'Angaling Supervisor','17500','Gopalgonj','Kotalipara','08C',to_date('10-04-2014','DD-MM-YYYY'),'11');
+
+INSERT INTO Employee(Employee_Id,Name,Date_Of_Birth,Designation,Salary,City,Street_Name,House_No,Joining_Date,Grade)
+VALUES('E-MS0001','Syed Rasel',to_date('08-01-1982','DD-MM-YYYY'),'Museum Manager','35000','Kustia','Vuiya Road','05A',to_date('10-04-2008','DD-MM-YYYY'),'6');
+
+
+INSERT INTO Employee(Employee_Id,Name,Date_Of_Birth,Designation,Salary,City,Street_No,Street_Name,House_No,Joining_Date,Grade)
+VALUES('E-MS0002','Azhar Ali',to_date('11-11-1987','DD-MM-YYYY'),'Museum Assistant Manager','26500','Comilla','09','Buricong','099B',to_date('01-01-2014','DD-MM-YYYY'),'6');
+
+INSERT INTO Employee(Employee_Id,Name,Date_Of_Birth,Designation,Salary,City,Street_No,Street_Name,House_No,Joining_Date,Grade)
+VALUES('E-MS0003','Rishad Munir',to_date('21-06-1991','DD-MM-YYYY'),'Museum Supervisor','17500','Bogra','07','Mohosthan Road','08G',to_date('07-01-2015','DD-MM-YYYY'),'11');
+
+
+INSERT INTO Employee(Employee_Id,Name,Date_Of_Birth,Designation,Salary,City,Street_No,Street_Name,House_No,Joining_Date,Grade)
+VALUES('E-RD0001','Nasir Uddin Shah',to_date('25-09-1973','DD-MM-YYYY'),'Course Assmbler','75000','Khoksha','05','Aman Sarani','05A',to_date('03-01-2006','DD-MM-YYYY'),'2');
+
+INSERT INTO Employee(Employee_Id,Name,Date_Of_Birth,Designation,Salary,City,Street_No,Street_Name,House_No,Joining_Date,Grade)
+VALUES('E-RD0002','Md.Anis-Us-Jaman',to_date('28-05-1987','DD-MM-YYYY'),'Course Co-Ordinator','62000','Rajshahi','14','Vasan Road','06C',to_date('02-01-2013','DD-MM-YYYY'),'2');
+
+
+
+
+INSERT INTO Employee(Employee_Id,Name,Date_Of_Birth,Designation,Salary,City,Street_No,Street_Name,House_No,Joining_Date,Grade)
+VALUES('E-RD0003','Mohammad Shami',to_date('14-03-1990','DD-MM-YYYY'),'Assistant Course Co-Ordinator','50000','Thakurgaon','05','Mona Road','05B',to_date('10-01-2003','DD-MM-YYYY'),'4');
+
+INSERT INTO Employee(Employee_Id,Name,Date_Of_Birth,Designation,Salary,City,Street_No,Street_Name,House_No,Joining_Date,Grade)
+VALUES('E-AN0001','Sharukh Khan',to_date('02-11-1986','DD-MM-YYYY'),'Assistant Inspector','7000','Dhaka','01','Mirpur-01','1A',to_date('01-09-2008','DD-MM-YYYY'),'17');
+
+INSERT INTO Employee(Employee_Id,Name,Date_Of_Birth,Designation,Salary,City,Street_Name,House_No,Joining_Date,Grade)
+VALUES('E-AN0002','Aamir Khan',to_date('14-04-1986','DD-MM-YYYY'),'Assistant Inspector','7000','Chandpur','Volabazar','2B',to_date('01-09-2008','DD-MM-YYYY'),'17');
+
+INSERT INTO Employee(Employee_Id,Name,Date_Of_Birth,Designation,Salary,City,Street_Name,House_No,Joining_Date,Grade)
+VALUES('E-AN0003','Rajib Bhatia',to_date('09-09-1987','DD-MM-YYYY'),'Assistant Inspector','7000','Nouakhali','Modonpur','T3',to_date('01-06-2010','DD-MM-YYYY'),'17');
+
+INSERT INTO Employee(Employee_Id,Name,Date_Of_Birth,Designation,Salary,City,Street_No,Street_Name,House_No,Joining_Date,Grade)
+VALUES('E-AN0004','Russell Crowe',to_date('02-11-1984','DD-MM-YYYY'),'Assistant Inspector','7000','Dhaka','01','Mirpur-02','11Z',to_date('01-09-2005','DD-MM-YYYY'),'17');
+
+
+INSERT INTO Employee(Employee_Id,Name,Date_Of_Birth,Designation,Salary,City,Street_No,Street_Name,House_No,Joining_Date,Grade)
+VALUES('E-AN0005','Ananta Jalil',to_date('02-11-1986','DD-MM-YYYY'),'Assistant Inspector','7000','Dhaka','01','Mirpur-01','1A',to_date('01-09-2008','DD-MM-YYYY'),'17');
+
+INSERT INTO Employee(Employee_Id,Name,Date_Of_Birth,Designation,Salary,City,Street_Name,House_No,Joining_Date,Grade)
+VALUES('E-AN0006','Nawab Siraj',to_date('14-04-1986','DD-MM-YYYY'),'Assistant Inspector','7000','Chandpur','Volabazar','2B',to_date('01-09-2008','DD-MM-YYYY'),'17');
+
+INSERT INTO Employee(Employee_Id,Name,Date_Of_Birth,Designation,Salary,City,Street_Name,House_No,Joining_Date,Grade)
+VALUES('E-AN0007','Raj Ananda',to_date('09-09-1987','DD-MM-YYYY'),'Assistant Inspector','7000','Nouakhali','Modonpur','T3',to_date('01-06-2010','DD-MM-YYYY'),'17');
+
+INSERT INTO Employee(Employee_Id,Name,Date_Of_Birth,Designation,Salary,City,Street_Name,House_No,Joining_Date,Grade)
+VALUES('E-AN0008','Sakib Al Hasan',to_date('06-09-1988','DD-MM-YYYY'),'Assistant Inspector','7000','Khulna','Doulatpur','T2',to_date('01-06-2011','DD-MM-YYYY'),'17');
+
+INSERT INTO Employee(Employee_Id,Name,Date_Of_Birth,Designation,Salary,City,Street_Name,House_No,Joining_Date,Grade)
+VALUES('E-BR0004','Akil Jawad',to_date('2-12-1989','DD-MM-YYYY'),'Boat Ridding Supervisor','29500','Khulna','Kawakhali','099B',to_date('10-01-2014','DD-MM-YYYY'),'11');
+
+INSERT INTO Employee(Employee_Id,Name,Date_Of_Birth,Designation,Salary,City,Street_Name,House_No,Joining_Date,Grade)
+VALUES('E-BR0005','YA Antu',to_date('23-03-1990','DD-MM-YYYY'),'Boat Ridding Supervisor','16500','Jessor','Osmani Road','08C',to_date('11-06-2014','DD-MM-YYYY'),'11');
+
+INSERT INTO Employee(Employee_Id,Name,Date_Of_Birth,Designation,Salary,City,Street_Name,House_No,Joining_Date,Grade)
+VALUES('E-BR0006','Shakil Ahmed',to_date('08-01-1982','DD-MM-YYYY'),'Boat Ridding Supervisor','15000','Kustia','Vuiya Road','05A',to_date('11-04-2008','DD-MM-YYYY'),'11');
+
+INSERT INTO Employee(Employee_Id,Name,Date_Of_Birth,Designation,Salary,City,Street_Name,House_No,Joining_Date,Grade)
+VALUES('E-BR0007','Shoab ur Rashid',to_date('2-12-1985','DD-MM-YYYY'),'Boat Ridding Supervisor','29500','Feni','Kawakhali','099B',to_date('10-02-2015','DD-MM-YYYY'),'11');
+
+INSERT INTO Employee(Employee_Id,Name,Date_Of_Birth,Designation,Salary,City,Street_Name,House_No,Joining_Date,Grade)
+VALUES('E-BR0008','Karim Iqbal',to_date('23-03-1993','DD-MM-YYYY'),'Boat Ridding Supervisor','16500','Jessore','Osmani Road','08C',to_date('11-03-2015','DD-MM-YYYY'),'11');
+
+INSERT INTO Employee(Employee_Id,Name,Date_Of_Birth,Designation,Salary,City,Street_Name,House_No,Joining_Date,Grade)
+VALUES('E-BR0009','Nazmul Hasan',to_date('08-01-1984','DD-MM-YYYY'),'Boat Ridding Supervisor','15000','Pabna','Vuiya Road','05A',to_date('13-04-2017','DD-MM-YYYY'),'11');
+
+INSERT INTO Employee(Employee_Id,Name,Date_Of_Birth,Designation,Salary,City,Street_Name,House_No,Joining_Date,Grade)
+VALUES('E-BR0010','Shoab ur Rashid',to_date('2-12-1985','DD-MM-YYYY'),'Boat Ridding Supervisor','29500','Jamalpur','Kawakhali','099B',to_date('10-08-2015','DD-MM-YYYY'),'11');
+
+INSERT INTO Employee(Employee_Id,Name,Date_Of_Birth,Designation,Salary,City,Street_Name,House_No,Joining_Date,Grade)
+VALUES('E-BR0011','Karim Iqbal',to_date('23-03-1993','DD-MM-YYYY'),'Boat Ridding Supervisor','16500','Chittagong','Osmani Road','08C',to_date('21-03-2015','DD-MM-YYYY'),'11');
+
+INSERT INTO Employee(Employee_Id,Name,Date_Of_Birth,Designation,Salary,City,Street_Name,House_No,Joining_Date,Grade)
+VALUES('E-BR0012','Nazmul Hasan',to_date('08-01-1984','DD-MM-YYYY'),'Boat Ridding Supervisor','15000','Rangamati','Vuiya Road','05A',to_date('03-04-2016','DD-MM-YYYY'),'11');
+
+INSERT INTO Employee(Employee_Id,Name,Date_Of_Birth,Designation,Salary,City,Street_Name,House_No,Joining_Date,Grade)
+VALUES('E-SB0001','Karim Khan',to_date('2-12-1985','DD-MM-YYYY'),'Boat Ridding Supervisor','29500','Jamalpur','Kawakhali','099B',to_date('10-08-2015','DD-MM-YYYY'),'11');
+
+INSERT INTO Employee(Employee_Id,Name,Date_Of_Birth,Designation,Salary,City,Street_Name,House_No,Joining_Date,Grade)
+VALUES('E-SB0002','Rahim Shekh',to_date('23-03-1993','DD-MM-YYYY'),'Boat Ridding Supervisor','16500','Chittagong','Osmani Road','08C',to_date('21-03-2015','DD-MM-YYYY'),'11');
+
+INSERT INTO Employee(Employee_Id,Name,Date_Of_Birth,Designation,Salary,City,Street_Name,House_No,Joining_Date,Grade)
+VALUES('E-SB0003','Rubel Hossain',to_date('08-01-1984','DD-MM-YYYY'),'Boat Ridding Supervisor','15000','Rangamati','Vuiya Road','05A',to_date('03-04-2016','DD-MM-YYYY'),'11');
+
+INSERT INTO Employee(Employee_Id,Name,Date_Of_Birth,Designation,Salary,City,Street_Name,House_No,Joining_Date,Grade)
+VALUES('E-AC0001','Karim Khan',to_date('2-12-1985','DD-MM-YYYY'),'Boat Ridding Supervisor','29500','Jamalpur','Kawakhali','099B',to_date('10-08-2015','DD-MM-YYYY'),'11');
+
+INSERT INTO Employee(Employee_Id,Name,Date_Of_Birth,Designation,Salary,City,Street_Name,House_No,Joining_Date,Grade)
+VALUES('E-AC0002','Rahim Shekh',to_date('23-03-1993','DD-MM-YYYY'),'Boat Ridding Supervisor','16500','Chittagong','Osmani Road','08C',to_date('21-03-2015','DD-MM-YYYY'),'11');
+
+INSERT INTO Employee(Employee_Id,Name,Date_Of_Birth,Designation,Salary,City,Street_Name,House_No,Joining_Date,Grade)
+VALUES('E-AC0003','Rubel Hossain',to_date('08-01-1984','DD-MM-YYYY'),'Boat Ridding Supervisor','15000','Rangamati','Vuiya Road','05A',to_date('03-04-2016','DD-MM-YYYY'),'11');

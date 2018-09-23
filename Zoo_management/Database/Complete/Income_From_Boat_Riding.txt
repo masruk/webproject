@@ -1,0 +1,12 @@
+CREATE TABLE Income_From_Boat_Riding
+(
+Account_Id VARCHAR2(20),
+Boat_No NUMBER(3,0),
+CONSTRAINT Income_From_BR_Acc_Id_fk FOREIGN KEY(Account_Id) REFERENCES Account_Section(Account_Id),
+CONSTRAINT Income_From_BR_Boat_No_fk FOREIGN KEY(Boat_No) REFERENCES Boat_Riding(Boat_No)
+);
+
+SELECT * FROM Income_From_Boat_Riding
+INSERT INTO Income_From_Boat_Riding(Account_Id,Boat_No) VALUES('AC-BR001A','101');
+INSERT INTO Income_From_Boat_Riding(Account_Id,Boat_No) VALUES('AC-BR001B','104');
+INSERT INTO Income_From_Boat_Riding(Account_Id,Boat_No) VALUES('AC-BR001C','110');

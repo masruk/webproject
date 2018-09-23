@@ -1,0 +1,19 @@
+CREATE TABLE Picnic_Spot
+(
+Spot_No VARCHAR2(20),
+Capacity VARCHAR2(20),
+Cost_Per_Day NUMBER(8,2),
+CONSTRAINT Picnic_Spot_Spot_No_pk PRIMARY KEY(Spot_No),
+CONSTRAINT Picnic_Spot_Capacity_ck CHECK(Capacity>0),
+CONSTRAINT Picnic_Spot_Cost_Per_Day_ck CHECK(Cost_Per_Day>0)
+);
+
+SELECT * FROM Picnic_Spot;
+
+INSERT INTO Picnic_Spot(Spot_No,Capacity,Cost_Per_Day) VALUES('PS_01','12','18000');
+
+INSERT INTO Picnic_Spot(Spot_No,Capacity,Cost_Per_Day) VALUES('PS_02','8','14000');
+
+INSERT INTO Picnic_Spot(Spot_No,Capacity,Cost_Per_Day) VALUES('PS_03','15','25000');
+
+

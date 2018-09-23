@@ -1,0 +1,59 @@
+CREATE TABLE Museum
+(
+Museum_Id VARCHAR2(20),
+Animal_Name VARCHAR2(20) NOT NULL,
+Class_Name VARCHAR2(20),
+Quantity NUMBER(3,0),
+Organ_Name VARCHAR2(20),
+CONSTRAINT Museum_Museum_Id_pk PRIMARY KEY(Museum_Id),
+CONSTRAINT Museum_Quantity_ck CHECK(Quantity>=0)
+);
+
+SELECT * FROM Museum
+
+INSERT INTO Museum(Museum_Id,Animal_Name,Class_Name,Quantity,Organ_Name)
+VALUES('MS_001','Tiger','Carnivorous','4','Scull');
+
+INSERT INTO Museum(Museum_Id,Animal_Name,Class_Name,Quantity,Organ_Name)
+VALUES('MS_002','Lion','Carnivorous','3','Scull');
+
+INSERT INTO Museum(Museum_Id,Animal_Name,Class_Name,Quantity,Organ_Name)
+VALUES('MS_003','Elephant','Herbivorous','6','Teeth');
+
+INSERT INTO Museum(Museum_Id,Animal_Name,Class_Name,Quantity,Organ_Name)
+VALUES('MS_004','Deer','Herbivorous','9','Horn');
+
+INSERT INTO Museum(Museum_Id,Animal_Name,Class_Name,Quantity,Organ_Name)
+VALUES('MS_005','Elephant','Herbivorous','9','Nail');
+
+INSERT INTO Museum(Museum_Id,Animal_Name,Class_Name,Quantity,Organ_Name)
+VALUES('MS_006','Anaconda','Reptiles','2','Skin');
+
+INSERT INTO Museum(Museum_Id,Animal_Name,Class_Name,Quantity,Organ_Name)
+VALUES('MS_007','Crocodile','Reptiles','3','Skin');
+
+INSERT INTO Museum(Museum_Id,Animal_Name,Class_Name,Quantity,Organ_Name)
+VALUES('MS_008','Python','Reptiles','2','Skin');
+
+INSERT INTO Museum(Museum_Id,Animal_Name,Class_Name,Quantity,Organ_Name)
+VALUES('MS_009','Deer','Herbivorous','4','Skin');
+
+INSERT INTO Museum(Museum_Id,Animal_Name,Class_Name,Quantity,Organ_Name)
+VALUES('MS_010','Elephant','Herbivorous','9','Nail');
+
+INSERT INTO Museum(Museum_Id,Animal_Name,Class_Name,Quantity,Organ_Name)
+VALUES('MS_011','Lion','Carnivorous','4','Nail');
+
+INSERT INTO Museum(Museum_Id,Animal_Name,Class_Name,Quantity,Organ_Name)
+VALUES('MS_012','Star Fish','Fish','9','Body');
+
+INSERT INTO Museum(Museum_Id,Animal_Name,Class_Name,Quantity,Organ_Name)
+VALUES('MS_013','Piranha','Fish','9','Body');
+
+
+
+
+select NO_OF_BOAT AS "BOAT NUMBER",NAME AS "SUPERVISOR NAME",PHONE_NO AS "PHONE NO" from angling join related_with_angling using(spot_no) join employee using(employee_id) join phone_no using(employee_id);
+
+
+

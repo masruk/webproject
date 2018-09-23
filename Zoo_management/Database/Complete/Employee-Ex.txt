@@ -1,0 +1,16 @@
+CREATE TABLE ExEmployee
+(
+Employee_Id VARCHAR2(20),
+Name VARCHAR2(20) NOT NULL,
+Date_Of_Birth DATE,
+Designation VARCHAR2(40),
+Salary VARCHAR2(20),
+City VARCHAR2(20),
+Street_No VARCHAR2(20),
+Street_Name VARCHAR2(30),
+House_No VARCHAR2(20),
+Joining_Date DATE NOT NULL,
+Grade VARCHAR2(20),
+CONSTRAINT Employee_Employee_Id_pk PRIMARY KEY(Employee_Id),
+CONSTRAINT Employee_Salary_ck CHECK(Salary>0)
+);

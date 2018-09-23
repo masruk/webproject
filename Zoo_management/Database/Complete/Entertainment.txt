@@ -1,0 +1,54 @@
+CREATE TABLE Entertainment
+(
+Entertainment_Id VARCHAR2(20),
+Entertainment_Day VARCHAR2(20),
+Openning_Time VARCHAR2(20),
+Closing_Time VARCHAR2(20),
+CONSTRAINT Ent_Ent_Id_pk PRIMARY KEY(Entertainment_Id)
+);
+
+SELECT * FROM Entertainment
+INSERT INTO Entertainment(Entertainment_Id,Entertainment_Day,Openning_Time,Closing_Time) VALUES('EN-BR001','Friday','1430','1800');
+INSERT INTO Entertainment(Entertainment_Id,Entertainment_Day,Openning_Time,Closing_Time) VALUES('EN-BR002','Saturday','1000','1800');
+INSERT INTO Entertainment(Entertainment_Id,Entertainment_Day,Openning_Time,Closing_Time) VALUES('EN-BR003','Sunday','---','---');
+INSERT INTO Entertainment(Entertainment_Id,Entertainment_Day,Openning_Time,Closing_Time) VALUES('EN-BR004','Monday','1000','1800');
+INSERT INTO Entertainment(Entertainment_Id,Entertainment_Day,Openning_Time,Closing_Time) VALUES('EN-BR005','Tuesday','1000','1800');
+INSERT INTO Entertainment(Entertainment_Id,Entertainment_Day,Openning_Time,Closing_Time) VALUES('EN-BR006','Wednesday','1000','1800');
+INSERT INTO Entertainment(Entertainment_Id,Entertainment_Day,Openning_Time,Closing_Time) VALUES('EN-BR007','Thursday','1000','1800');
+
+INSERT INTO Entertainment(Entertainment_Id,Entertainment_Day,Openning_Time,Closing_Time) VALUES('EN-AG001','Friday','1430','1800');
+INSERT INTO Entertainment(Entertainment_Id,Entertainment_Day,Openning_Time,Closing_Time) VALUES('EN-AG002','Saturday','1000','1800');
+INSERT INTO Entertainment(Entertainment_Id,Entertainment_Day,Openning_Time,Closing_Time) VALUES('EN-AG003','Sunday','---','---');
+INSERT INTO Entertainment(Entertainment_Id,Entertainment_Day,Openning_Time,Closing_Time) VALUES('EN-AG004','Monday','1000','1800');
+INSERT INTO Entertainment(Entertainment_Id,Entertainment_Day,Openning_Time,Closing_Time) VALUES('EN-AG005','Tuesday','1000','1800');
+INSERT INTO Entertainment(Entertainment_Id,Entertainment_Day,Openning_Time,Closing_Time) VALUES('EN-AG006','Wednesday','1000','1800');
+INSERT INTO Entertainment(Entertainment_Id,Entertainment_Day,Openning_Time,Closing_Time) VALUES('EN-AG007','Thursday','1000','1800');
+
+INSERT INTO Entertainment(Entertainment_Id,Entertainment_Day,Openning_Time,Closing_Time) VALUES('EN-PS001','Friday','1430','1800');
+INSERT INTO Entertainment(Entertainment_Id,Entertainment_Day,Openning_Time,Closing_Time) VALUES('EN-PS002','Saturday','1000','1800');
+INSERT INTO Entertainment(Entertainment_Id,Entertainment_Day,Openning_Time,Closing_Time) VALUES('EN-PS003','Sunday','---','---');
+INSERT INTO Entertainment(Entertainment_Id,Entertainment_Day,Openning_Time,Closing_Time) VALUES('EN-PS004','Monday','1000','1800');
+INSERT INTO Entertainment(Entertainment_Id,Entertainment_Day,Openning_Time,Closing_Time) VALUES('EN-PS005','Tuesday','1000','1800');
+INSERT INTO Entertainment(Entertainment_Id,Entertainment_Day,Openning_Time,Closing_Time) VALUES('EN-PS006','Wednesday','1000','1800');
+INSERT INTO Entertainment(Entertainment_Id,Entertainment_Day,Openning_Time,Closing_Time) VALUES('EN-PS007','Thursday','1000','1800');
+
+INSERT INTO Entertainment(Entertainment_Id,Entertainment_Day,Openning_Time,Closing_Time) VALUES('EN-AN001','Friday','1430','1800');
+INSERT INTO Entertainment(Entertainment_Id,Entertainment_Day,Openning_Time,Closing_Time) VALUES('EN-AN002','Saturday','1000','1800');
+INSERT INTO Entertainment(Entertainment_Id,Entertainment_Day,Openning_Time,Closing_Time) VALUES('EN-AN003','Sunday','---','---');
+INSERT INTO Entertainment(Entertainment_Id,Entertainment_Day,Openning_Time,Closing_Time) VALUES('EN-AN004','Monday','1000','1800');
+INSERT INTO Entertainment(Entertainment_Id,Entertainment_Day,Openning_Time,Closing_Time) VALUES('EN-AN005','Tuesday','1000','1800');
+INSERT INTO Entertainment(Entertainment_Id,Entertainment_Day,Openning_Time,Closing_Time) VALUES('EN-AN006','Wednesday','1000','1800');
+INSERT INTO Entertainment(Entertainment_Id,Entertainment_Day,Openning_Time,Closing_Time) VALUES('EN-AN007','Thursday','1000','1800');
+
+
+INSERT INTO Entertainment(Entertainment_Id,Entertainment_Day,Openning_Time,Closing_Time) VALUES('EN-MU001','Friday','1430','1800');
+INSERT INTO Entertainment(Entertainment_Id,Entertainment_Day,Openning_Time,Closing_Time) VALUES('EN-MU002','Saturday','1000','1800');
+INSERT INTO Entertainment(Entertainment_Id,Entertainment_Day,Openning_Time,Closing_Time) VALUES('EN-MU003','Sunday','---','---');
+INSERT INTO Entertainment(Entertainment_Id,Entertainment_Day,Openning_Time,Closing_Time) VALUES('EN-MU004','Monday','1000','1800');
+INSERT INTO Entertainment(Entertainment_Id,Entertainment_Day,Openning_Time,Closing_Time) VALUES('EN-MU005','Tuesday','1000','1800');
+INSERT INTO Entertainment(Entertainment_Id,Entertainment_Day,Openning_Time,Closing_Time) VALUES('EN-MU006','Wednesday','1000','1800');
+INSERT INTO Entertainment(Entertainment_Id,Entertainment_Day,Openning_Time,Closing_Time) VALUES('EN-MU007','Thursday','1000','1800');
+
+
+
+

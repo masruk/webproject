@@ -1,0 +1,94 @@
+<?php
+	session_start();
+?>
+<!DOCTYPE html>
+
+<?php include '../Connection/connection.php'; ?>
+
+
+<html>
+	<head>
+		<title> Bangladesh National Zoo</title>
+		<link rel="stylesheet" type="text/css" href="../Style/style.css">
+		<!-- <script src="../Script/script.js"></script> -->
+	</head>
+	
+	
+	
+	<body>
+		<?php include '../Body/header.php';?>
+		
+		
+		<div id="center_block">
+			<p>Search Employee</p>
+			<form method="post" action='<?php echo $_SERVER["PHP_SELF"];?>'>
+				<input type="text" placeholder="Id or Name" name="search_employee"></input>
+				<input type="submit" Value="Submit" onclick="show_search_result()">
+			</form>
+			
+
+			<?php //echo $_SERVER["PHP_SELF"];?>
+			
+			<form method="post" action='processEmployee.php'>
+			<div id="search_result">
+				<?php
+					if(empty($_POST["search_employee"])){
+						echo '<input type="submit" value="View Detail"> <br>';
+						$employee_name='SELECT employee.name from Employee';
+						$show_emp_name=oci_parse($conn,$employee_name);
+						oci_execute($show_emp_name);
+						
+						while($h_row=oci_fetch_array($show_emp_name,OCI_ASSOC))
+						{			
+							foreach($h_row as $col)
+							{
+								?>
+								<input type="radio" name="name" value="<?php echo $col; ?>" > <?php echo $col; ?> <br>
+								<?php
+								//echo  '<input type="radio" name="name" value='.$col.' checked>'.$col.'<br>';
+							//	$_session["name"]=$col;
+							//<input type="hidden" name="id" value="<?php echo $id "> <button type="submit">view</button>
+							// $_SESSION["name"] = "dlskfj";
+								
+								//echo '<a href="processEmployee.php">View details</a><br>';
+										
+							}
+						}
+						
+					}
+					else{
+						echo '<input type="submit" value="View Detail"> <br>';
+						$employee_name="SELECT employee.name from Employee where UPPER(employee.name) LIKE UPPER('".$_POST["search_employee"]."%')";
+						$show_emp_name=oci_parse($conn,$employee_name);
+						oci_execute($show_emp_name);
+						
+						while($h_row=oci_fetch_array($show_emp_name,OCI_ASSOC))
+						{			
+							foreach($h_row as $col)
+							{
+								
+								?>
+								<input type="radio" name="name" value="<?php echo $col; ?>" > <?php echo $col; ?> <br>
+								<?php
+								 
+								/* <form action="processEmployee.php" method="post" enctype="multipart/form-data>
+
+								<input type="submit" name="'.$col.'" value="View Detail" />
+								</form>'; */
+							}
+						}
+						
+						echo "</form>";
+						
+					}
+				
+				?>
+			</div>
+			
+		
+		</div>
+
+
+		<?php include '../Body/footer.php';?>
+	</body>
+</html>

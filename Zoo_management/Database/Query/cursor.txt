@@ -1,0 +1,14 @@
+DECLARE
+	CURSOR boat_driver
+	IS
+	SELECT employee.name,boat_no from employee JOIN related_with_boat_riding using(employee_id) join Boat_riding using(boat_no)
+	WHERE Type_Of_Boat LIKE 'Speed%';
+	
+	show_speed_boat_driver boat_driver%ROWTYPE;
+BEGIN
+	OPEN boat_driver;
+	FETCH boat_driver INTO show_speed_boat_driver;
+	DBMS_OUTPUT.PUT_LINE(show_speed_boat_driver.name);
+	CLOSE boat_driver;
+
+END;

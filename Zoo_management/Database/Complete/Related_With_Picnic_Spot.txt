@@ -1,0 +1,14 @@
+CREATE TABLE Related_With_Picnic_Spot
+(
+Employee_Id VARCHAR2(20),
+Spot_No VARCHAR2(20),
+CONSTRAINT RLW_Picnic_Spot_Employee_Id_fk FOREIGN KEY(Employee_Id) REFERENCES Employee(Employee_Id),
+CONSTRAINT RLW_Picnic_Spot_Spot_No_fk FOREIGN KEY(Spot_No) REFERENCES Picnic_Spot(Spot_No)
+);
+
+SELECT * FROM Related_With_Picnic_Spot
+INSERT INTO Related_With_Picnic_Spot(Employee_Id,Spot_No) VALUES('E-PS0001','PS_01');
+
+INSERT INTO Related_With_Picnic_Spot(Employee_Id,Spot_No) VALUES('E-PS0002','PS_02');
+
+INSERT INTO Related_With_Picnic_Spot(Employee_Id,Spot_No) VALUES('E-PS0003','PS_03');

@@ -1,0 +1,29 @@
+CREATE TABLE Entertainment_From_Boat_Riding
+(
+Entertainment_Id VARCHAR2(20),
+Boat_No VARCHAR2(20),
+CONSTRAINT Ent_From_BR_Ent_Id_fk FOREIGN KEY(Entertainment_Id) REFERENCES entertainment(Entertainment_Id),
+CONSTRAINT Ent_From_BR_Boat_No_fk FOREIGN KEY(Boat_No) REFERENCES Boat_Riding(Boat_No)
+);
+
+SELECT * FROM Entertainment_From_Boat_Riding
+INSERT INTO Entertainment_From_Boat_Riding(Entertainment_Id,Boat_No) VALUES('EN-BR001','104');
+INSERT INTO Entertainment_From_Boat_Riding(Entertainment_Id,Boat_No) VALUES('EN-BR001','109');
+INSERT INTO Entertainment_From_Boat_Riding(Entertainment_Id,Boat_No) VALUES('EN-BR001','110');
+INSERT INTO Entertainment_From_Boat_Riding(Entertainment_Id,Boat_No) VALUES('EN-BR002','104');
+INSERT INTO Entertainment_From_Boat_Riding(Entertainment_Id,Boat_No) VALUES('EN-BR002','109');
+INSERT INTO Entertainment_From_Boat_Riding(Entertainment_Id,Boat_No) VALUES('EN-BR002','110');
+INSERT INTO Entertainment_From_Boat_Riding(Entertainment_Id,Boat_No) VALUES('EN-BR004','111');
+INSERT INTO Entertainment_From_Boat_Riding(Entertainment_Id,Boat_No) VALUES('EN-BR004','105');
+INSERT INTO Entertainment_From_Boat_Riding(Entertainment_Id,Boat_No) VALUES('EN-BR004','103');
+INSERT INTO Entertainment_From_Boat_Riding(Entertainment_Id,Boat_No) VALUES('EN-BR005','101');
+INSERT INTO Entertainment_From_Boat_Riding(Entertainment_Id,Boat_No) VALUES('EN-BR005','102');
+INSERT INTO Entertainment_From_Boat_Riding(Entertainment_Id,Boat_No) VALUES('EN-BR005','113');
+INSERT INTO Entertainment_From_Boat_Riding(Entertainment_Id,Boat_No) VALUES('EN-BR006','104');
+INSERT INTO Entertainment_From_Boat_Riding(Entertainment_Id,Boat_No) VALUES('EN-BR006','109');
+INSERT INTO Entertainment_From_Boat_Riding(Entertainment_Id,Boat_No) VALUES('EN-BR006','114');
+INSERT INTO Entertainment_From_Boat_Riding(Entertainment_Id,Boat_No) VALUES('EN-BR007','107');
+INSERT INTO Entertainment_From_Boat_Riding(Entertainment_Id,Boat_No) VALUES('EN-BR007','108');
+INSERT INTO Entertainment_From_Boat_Riding(Entertainment_Id,Boat_No) VALUES('EN-BR007','113');
+
+

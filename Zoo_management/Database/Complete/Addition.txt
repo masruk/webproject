@@ -1,0 +1,52 @@
+CREATE TABLE Addition
+(
+Addition_No VARCHAR2(20),
+Add_DATE DATE NOT NULL,
+Bought_Male NUMBER(3,0),
+Bought_Female NUMBER(3,0),
+Bought_Undefined NUMBER(3,0),
+Born_Male NUMBER(3,0),
+Born_Female NUMBER(3,0),
+Born_Undefined NUMBER(3,0),
+Exchange_Male NUMBER(3,0),
+Exchange_Female NUMBER(3,0),
+Exchange_Undefined NUMBER(3,0),
+Donation_Male NUMBER(3,0),
+Donation_Female NUMBER(3,0),
+Donation_Undefined NUMBER(3,0),
+CONSTRAINT Addition_Addition_No_pk PRIMARY KEY(Addition_No),
+CONSTRAINT Addition_Bought_Male_ck CHECK(Bought_Male>=0),
+CONSTRAINT Addition_Bought_Female_ck CHECK(Bought_Female>=0),
+CONSTRAINT Addition_Bought_Undefined_ck CHECK(Bought_Undefined>=0),
+CONSTRAINT Addition_Born_Male_ck CHECK(Born_Male>=0),
+CONSTRAINT Addition_Born_Female_ck CHECK(Born_Female>=0),
+CONSTRAINT Addition_Born_Undefined_ck CHECK(Born_Undefined>=0),
+CONSTRAINT Addition_Donation_Male_ck CHECK(Donation_Male>=0),
+CONSTRAINT Addition_Donation_Female_ck CHECK(Donation_Female>=0),
+CONSTRAINT Addition_Donation_Undefined_ck CHECK(Donation_Undefined>=0),
+CONSTRAINT Addition_Exchage_Male_ck CHECK(Exchange_Male>=0),
+CONSTRAINT Addition_Exchage_Female_ck CHECK(Exchange_Female>=0),
+CONSTRAINT Addition_Exchage_Undefined_ck CHECK(Exchange_Undefined>=0)
+);
+
+SELECT * FROM Addition
+INSERT INTO Addition(Addition_No,Add_DATE,Bought_Male,Bought_Female,Bought_Undefined,Born_Male,Born_Female,Born_Undefined,Exchange_Male,Exchange_Female,Exchange_Undefined,Donation_Male,Donation_Female,Donation_Undefined)
+VALUES('AD-0001',to_date('31-12-2015','DD-MM-YYYY'),'2','0','1','1','1','0','1','2','0','0','0','0');
+
+INSERT INTO Addition(Addition_No,Add_DATE,Bought_Male,Bought_Female,Bought_Undefined,Born_Male,Born_Female,Born_Undefined,Exchange_Male,Exchange_Female,Exchange_Undefined,Donation_Male,Donation_Female,Donation_Undefined)
+VALUES('AD-0002',to_date('31-12-2015','DD-MM-YYYY'),'1','1','0','1','1','0','1','2','0','0','0','0');
+
+INSERT INTO Addition(Addition_No,Add_DATE,Bought_Male,Bought_Female,Bought_Undefined,Born_Male,Born_Female,Born_Undefined,Exchange_Male,Exchange_Female,Exchange_Undefined,Donation_Male,Donation_Female,Donation_Undefined)
+VALUES('AD-0003',to_date('31-12-2015','DD-MM-YYYY'),'2','0','1','1','1','0','1','0','0','0','1','0');
+
+INSERT INTO Addition(Addition_No,Add_DATE,Bought_Male,Bought_Female,Bought_Undefined,Born_Male,Born_Female,Born_Undefined,Exchange_Male,Exchange_Female,Exchange_Undefined,Donation_Male,Donation_Female,Donation_Undefined)
+VALUES('AD-0004',to_date('31-12-2015','DD-MM-YYYY'),'2','0','1','1','1','0','1','2','1','0','0','1');
+
+INSERT INTO Addition(Addition_No,Add_DATE,Bought_Male,Bought_Female,Bought_Undefined,Born_Male,Born_Female,Born_Undefined,Exchange_Male,Exchange_Female,Exchange_Undefined,Donation_Male,Donation_Female,Donation_Undefined)
+VALUES('AD-0005',to_date('31-12-2015','DD-MM-YYYY'),'0','0','2','1','1','1','2','0','0','1','0','0');
+
+INSERT INTO Addition(Addition_No,Add_DATE,Bought_Male,Bought_Female,Bought_Undefined,Born_Male,Born_Female,Born_Undefined,Exchange_Male,Exchange_Female,Exchange_Undefined,Donation_Male,Donation_Female,Donation_Undefined)
+VALUES('AD-0006',to_date('31-12-2015','DD-MM-YYYY'),'2','0','1','1','1','1','1','2','0','0','1','0');
+
+INSERT INTO Addition(Addition_No,Add_DATE,Bought_Male,Bought_Female,Bought_Undefined,Born_Male,Born_Female,Born_Undefined,Exchange_Male,Exchange_Female,Exchange_Undefined,Donation_Male,Donation_Female,Donation_Undefined)
+VALUES('AD-0007',to_date('31-12-2015','DD-MM-YYYY'),'0','1','0','1','1','0','1','2','0','1','0','0');

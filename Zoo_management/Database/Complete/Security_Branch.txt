@@ -1,0 +1,19 @@
+CREATE TABLE Security_Branch
+(
+Security_Id VARCHAR2(20),
+Branch_Name VARCHAR2(50) NOT NULL,
+Block_No VARCHAR2(20),
+Area_Name VARCHAR2(20),
+Area VARCHAR2(20),
+CONSTRAINT Security_Security_Id_pk PRIMARY KEY(Security_Id)
+);
+
+SELECT * FROM Security_Branch
+INSERT INTO Security_Branch(Security_Id,Branch_Name,Block_No,Area_Name,Area)
+VALUES('SB-01','Northern_Branch','A','Polash','Northern_Area');
+
+INSERT INTO Security_Branch(Security_Id,Branch_Name,Block_No,Area_Name,Area)
+VALUES('SB-02','Southern_Branch','B','Voirob','Southern_Area');
+
+INSERT INTO Security_Branch(Security_Id,Branch_Name,Block_No,Area_Name,Area)
+VALUES('SB-03','Eastern_Branch','C','Dolon','Eastern_Area');

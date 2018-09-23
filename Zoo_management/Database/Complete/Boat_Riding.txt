@@ -1,0 +1,60 @@
+CREATE TABLE Boat_Riding
+(
+Boat_No NUMBER(3,0),
+Type_Of_Boat VARCHAR2(20),
+Max_Capacity NUMBER(3,0),
+Riding_Zone VARCHAR2(20),
+Cost_Per_Time NUMBER(7,2),
+CONSTRAINT Boat_Riding_Boat_No_pk PRIMARY KEY(Boat_No),
+CONSTRAINT Boat_Riding_Max_Capacity_ck CHECK(Max_Capacity>=0),
+CONSTRAINT Boat_Riding_Cost_Per_Time_ck CHECK(Cost_Per_Time>=0)
+);
+
+CREATE SEQUENCE Boat
+			INCREMENT BY 1
+			START WITH 101
+			MAXVALUE 500
+			NOCACHE
+			NOCYCLE;
+
+INSERT INTO Boat_Riding(Boat_No,Type_Of_Boat,Max_Capacity,Riding_Zone,Cost_Per_Time)
+VALUES(Boat.NEXTVAL,'Sampan','25','Alpha-1','1000');
+
+INSERT INTO Boat_Riding(Boat_No,Type_Of_Boat,Max_Capacity,Riding_Zone,Cost_Per_Time)
+VALUES(Boat.NEXTVAL,'Speed Boat','6','Beta-1','500');
+
+INSERT INTO Boat_Riding(Boat_No,Type_Of_Boat,Max_Capacity,Riding_Zone,Cost_Per_Time)
+VALUES(Boat.NEXTVAL,'Electric Boat','15','Gama-1','1200');
+
+INSERT INTO Boat_Riding(Boat_No,Type_Of_Boat,Max_Capacity,Riding_Zone,Cost_Per_Time)
+VALUES(Boat.NEXTVAL,'Sampan','25','Alpha-2','1000');
+
+INSERT INTO Boat_Riding(Boat_No,Type_Of_Boat,Max_Capacity,Riding_Zone,Cost_Per_Time)
+VALUES(Boat.NEXTVAL,'Dingey','4','Beta-2','600');
+
+INSERT INTO Boat_Riding(Boat_No,Type_Of_Boat,Max_Capacity,Riding_Zone,Cost_Per_Time)
+VALUES(Boat.NEXTVAL,'Bay Boat','12','Gama-2','1200');
+
+INSERT INTO Boat_Riding(Boat_No,Type_Of_Boat,Max_Capacity,Riding_Zone,Cost_Per_Time)
+VALUES(Boat.NEXTVAL,'Deck Boat','14','Alpha-1','1000');
+
+INSERT INTO Boat_Riding(Boat_No,Type_Of_Boat,Max_Capacity,Riding_Zone,Cost_Per_Time)
+VALUES(Boat.NEXTVAL,'Speed Boat','6','Beta-1','500');
+
+INSERT INTO Boat_Riding(Boat_No,Type_Of_Boat,Max_Capacity,Riding_Zone,Cost_Per_Time)
+VALUES(Boat.NEXTVAL,'Dingy','4','Gama-3','2000');
+
+INSERT INTO Boat_Riding(Boat_No,Type_Of_Boat,Max_Capacity,Riding_Zone,Cost_Per_Time)
+VALUES(Boat.NEXTVAL,'Deck Boat','14','Alpha-1','1000');
+
+INSERT INTO Boat_Riding(Boat_No,Type_Of_Boat,Max_Capacity,Riding_Zone,Cost_Per_Time)
+VALUES(Boat.NEXTVAL,'Speed Boat','6','Beta-2','500');
+
+INSERT INTO Boat_Riding(Boat_No,Type_Of_Boat,Max_Capacity,Riding_Zone,Cost_Per_Time)
+VALUES(Boat.NEXTVAL,'Electric Boat','15','Gama-3','2000');
+
+
+
+
+
+

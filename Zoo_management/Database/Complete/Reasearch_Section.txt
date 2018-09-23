@@ -1,0 +1,22 @@
+CREATE TABLE Reasearch_Section
+(
+RADS_Id VARCHAR2(20),
+Branch_Name VARCHAR2(50) NOT NULL,
+Block_No VARCHAR2(20),
+Area_Name VARCHAR2(20),
+Area VARCHAR2(20),
+CONSTRAINT RADS_RADS_Id_pk PRIMARY KEY(RADS_Id)
+);
+
+SELECT * FROM Reasearch_Section
+
+INSERT INTO Reasearch_Section(RADS_Id,Branch_Name,Block_No,Area_Name,Area)
+VALUES('RADS-0001','RNDS-Carnivorous','2A','Polash','Northern');
+INSERT INTO Reasearch_Section(RADS_Id,Branch_Name,Block_No,Area_Name,Area)
+VALUES('RADS-0010','RNDS-Carnivorous','3A','Shapla','Northern');
+INSERT INTO Reasearch_Section(RADS_Id,Branch_Name,Block_No,Area_Name,Area)
+VALUES('RADS-0011','RNDS-Harbivorous','1A','Shimul','Southern');
+INSERT INTO Reasearch_Section(RADS_Id,Branch_Name,Block_No,Area_Name,Area)
+VALUES('RADS-0100','RNDS-Birds','3A','Krisnochura','Eastern');
+INSERT INTO Reasearch_Section(RADS_Id,Branch_Name,Block_No,Area_Name,Area)
+VALUES('RADS-0101','RNDS-Reptiles','2A','Dolonchapa','Western');

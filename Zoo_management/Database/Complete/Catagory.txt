@@ -1,0 +1,125 @@
+CREATE TABLE Catagory
+(
+Catagory_Id VARCHAR2(20),
+Class_Name VARCHAR2(20) NOT NULL,
+Number_Of_Animal NUMBER(3,0),
+CONSTRAINT Catagory_Catagory_Id_pk PRIMARY KEY(Catagory_Id),
+CONSTRAINT Catagory_Number_Of_Animal_ck CHECK(Number_Of_Animal>=0)
+);
+
+
+SELECT * FROM Catagory
+INSERT INTO Catagory(Catagory_Id,Class_Name,Number_Of_Animal) VALUES('Car-0001','Carnivores','1');
+INSERT INTO Catagory(Catagory_Id,Class_Name,Number_Of_Animal) VALUES('Car-0002','Carnivores','1');
+INSERT INTO Catagory(Catagory_Id,Class_Name,Number_Of_Animal) VALUES('Car-0003','Carnivores','1');
+INSERT INTO Catagory(Catagory_Id,Class_Name,Number_Of_Animal) VALUES('Car-0004','Carnivores','1');
+INSERT INTO Catagory(Catagory_Id,Class_Name,Number_Of_Animal) VALUES('Car-0005','Carnivores','1');
+INSERT INTO Catagory(Catagory_Id,Class_Name,Number_Of_Animal) VALUES('Car-0006','Carnivores','1');
+INSERT INTO Catagory(Catagory_Id,Class_Name,Number_Of_Animal) VALUES('Car-0007','Carnivores','1');
+INSERT INTO Catagory(Catagory_Id,Class_Name,Number_Of_Animal) VALUES('Car-0008','Carnivores','1');
+INSERT INTO Catagory(Catagory_Id,Class_Name,Number_Of_Animal) VALUES('Car-0009','Carnivores','1');
+INSERT INTO Catagory(Catagory_Id,Class_Name,Number_Of_Animal) VALUES('Car-0010','Carnivores','1');
+INSERT INTO Catagory(Catagory_Id,Class_Name,Number_Of_Animal) VALUES('Car-0011','Carnivores','1');
+INSERT INTO Catagory(Catagory_Id,Class_Name,Number_Of_Animal) VALUES('Car-0012','Carnivores','1');
+INSERT INTO Catagory(Catagory_Id,Class_Name,Number_Of_Animal) VALUES('Car-0013','Carnivores','1');
+INSERT INTO Catagory(Catagory_Id,Class_Name,Number_Of_Animal) VALUES('Car-0014','Carnivores','1');
+
+
+INSERT INTO Catagory(Catagory_Id,Class_Name,Number_Of_Animal)values('Her-0001','Large Herbivores','1');
+
+INSERT INTO Catagory(Catagory_Id,Class_Name,Number_Of_Animal)values('Her-0002','Large Herbivores','1');
+
+INSERT INTO Catagory(Catagory_Id,Class_Name,Number_Of_Animal)values('Her-0003','Large Herbivores','1');
+
+INSERT INTO Catagory(Catagory_Id,Class_Name,Number_Of_Animal)values('Her-0004','Large Herbivores','1');
+
+INSERT INTO Catagory(Catagory_Id,Class_Name,Number_Of_Animal)values('Her-0005','Large Herbivores','1');
+
+INSERT INTO Catagory(Catagory_Id,Class_Name,Number_Of_Animal)values('Her-0006','Large Herbivores','21');
+
+INSERT INTO Catagory(Catagory_Id,Class_Name,Number_Of_Animal)values('Her-0007','Large Herbivores','19');
+
+INSERT INTO Catagory(Catagory_Id,Class_Name,Number_Of_Animal)values('Her-0008','Large Herbivores','1');
+
+INSERT INTO Catagory(Catagory_Id,Class_Name,Number_Of_Animal)values('Her-0009','Large Herbivores','1');
+
+INSERT INTO Catagory(Catagory_Id,Class_Name,Number_Of_Animal)values('Her-0010','Large Herbivores','1');
+
+INSERT INTO Catagory(Catagory_Id,Class_Name,Number_Of_Animal)values('Her-0011','Large Herbivores','17');
+
+INSERT INTO Catagory(Catagory_Id,Class_Name,Number_Of_Animal)values('Her-0012','Large Herbivores','23');
+
+INSERT INTO Catagory(Catagory_Id,Class_Name,Number_Of_Animal)values('Her-0013','Large Herbivores','19');
+
+
+INSERT INTO Catagory(Catagory_Id,Class_Name,Number_Of_Animal)values('Mam-0001','Mammals','24');
+
+INSERT INTO Catagory(Catagory_Id,Class_Name,Number_Of_Animal)values('Mam-0002','Mammals','23');
+
+INSERT INTO Catagory(Catagory_Id,Class_Name,Number_Of_Animal)values('Mam-0003','Mammals','29');
+
+INSERT INTO Catagory(Catagory_Id,Class_Name,Number_Of_Animal)values('Mam-0004','Mammals','27');
+
+INSERT INTO Catagory(Catagory_Id,Class_Name,Number_Of_Animal)values('Mam-0005','Mammals','32');
+
+INSERT INTO Catagory(Catagory_Id,Class_Name,Number_Of_Animal)values('Mam-0006','Mammals','22');
+
+INSERT INTO Catagory(Catagory_Id,Class_Name,Number_Of_Animal)values('Mam-0007','Mammals','18');
+
+INSERT INTO Catagory(Catagory_Id,Class_Name,Number_Of_Animal)values('Rep-0001','Reptiles','15');
+
+INSERT INTO Catagory(Catagory_Id,Class_Name,Number_Of_Animal)values('Rep-0002','Reptiles','14');
+
+INSERT INTO Catagory(Catagory_Id,Class_Name,Number_Of_Animal)values('Rep-0003','Reptiles','17');
+
+INSERT INTO Catagory(Catagory_Id,Class_Name,Number_Of_Animal)values('Rep-0004','Reptiles','21');
+
+INSERT INTO Catagory(Catagory_Id,Class_Name,Number_Of_Animal)values('Rep-0005','Reptiles','28');
+
+INSERT INTO Catagory(Catagory_Id,Class_Name,Number_Of_Animal)values('Rep-0006','Reptiles','18');
+
+INSERT INTO Catagory(Catagory_Id,Class_Name,Number_Of_Animal)values('Brd-0001','Bird','15');
+
+INSERT INTO Catagory(Catagory_Id,Class_Name,Number_Of_Animal)values('Brd-0002','Bird','14');
+
+INSERT INTO Catagory(Catagory_Id,Class_Name,Number_Of_Animal)values('Brd-0003','Bird','57');
+
+INSERT INTO Catagory(Catagory_Id,Class_Name,Number_Of_Animal)values('Brd-0004','Bird','82');
+
+INSERT INTO Catagory(Catagory_Id,Class_Name,Number_Of_Animal)values('Brd-0005','Bird','68');
+
+INSERT INTO Catagory(Catagory_Id,Class_Name,Number_Of_Animal)values('Brd-0006','Bird','118');
+
+INSERT INTO Catagory(Catagory_Id,Class_Name,Number_Of_Animal)values('Brd-0007','Bird','75');
+
+INSERT INTO Catagory(Catagory_Id,Class_Name,Number_Of_Animal)values('Brd-0008','Bird','92');
+
+INSERT INTO Catagory(Catagory_Id,Class_Name,Number_Of_Animal)values('Brd-0009','Bird','96');
+
+INSERT INTO Catagory(Catagory_Id,Class_Name,Number_Of_Animal)values('Brd-0010','Bird','90');
+
+INSERT INTO Catagory(Catagory_Id,Class_Name,Number_Of_Animal)values('Brd-0011','Bird','67');
+
+INSERT INTO Catagory(Catagory_Id,Class_Name,Number_Of_Animal)values('Brd-0012','Bird','52');
+
+INSERT INTO Catagory(Catagory_Id,Class_Name,Number_Of_Animal)values('Brd-0013','Bird','68');
+
+INSERT INTO Catagory(Catagory_Id,Class_Name,Number_Of_Animal)values('Brd-0014','Bird','89');
+
+
+
+INSERT INTO Catagory(Catagory_Id,Class_Name,Number_Of_Animal)values('Fis-0001','Fish','150');
+
+INSERT INTO Catagory(Catagory_Id,Class_Name,Number_Of_Animal)values('Fis-0002','Fish','142');
+
+INSERT INTO Catagory(Catagory_Id,Class_Name,Number_Of_Animal)values('Fis-0003','Fish','125');
+
+INSERT INTO Catagory(Catagory_Id,Class_Name,Number_Of_Animal)values('Fis-0004','Fish','130');
+
+INSERT INTO Catagory(Catagory_Id,Class_Name,Number_Of_Animal)values('Fis-0005','Fish','168');
+
+INSERT INTO Catagory(Catagory_Id,Class_Name,Number_Of_Animal)values('Fis-0006','Fish','158');
+
+INSERT INTO Catagory(Catagory_Id,Class_Name,Number_Of_Animal)values('Fis-0007','Fish','175');
+
+

@@ -1,0 +1,29 @@
+CREATE TABLE Veterinary_Hospital_Section
+(
+VHS_Id VARCHAR2(20),
+Branch_Name VARCHAR2(50) NOT NULL,
+Block_No VARCHAR2(20),
+Area_Name VARCHAR2(20),
+Area VARCHAR2(20),
+CONSTRAINT VHS_VHS_Id_pk PRIMARY KEY(VHS_Id)
+);
+
+SELECT * FROM Veterinary_Hospital_Section
+
+INSERT INTO Veterinary_Hospital_Section(VHS_Id,Branch_Name,Block_No,Area_Name,Area)
+VALUES('VHS-0001','BR-1','A','Polash','Northern_Area');
+
+INSERT INTO Veterinary_Hospital_Section(VHS_Id,Branch_Name,Block_No,Area_Name,Area)
+VALUES('VHS-0002','BR-2','B','Voirab','Southern_Area');
+
+INSERT INTO Veterinary_Hospital_Section(VHS_Id,Branch_Name,Block_No,Area_Name,Area)
+VALUES('VHS-0003','BR-3','C','Dolon','Eastarn_Area');
+
+INSERT INTO Veterinary_Hospital_Section(VHS_Id,Branch_Name,Block_No,Area_Name,Area)
+VALUES('VHS-0004','BR-4','D','Ajam','NorthEast_Area');
+
+INSERT INTO Veterinary_Hospital_Section(VHS_Id,Branch_Name,Block_No,Area_Name,Area)
+VALUES('VHS-0005','BR-5','E','Ekush','SoutheEast_Area');
+
+INSERT INTO Veterinary_Hospital_Section(VHS_Id,Branch_Name,Block_No,Area_Name,Area)
+VALUES('VHS-0006','BR-6','F','Ekattur','Westarn_Area');

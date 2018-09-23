@@ -1,0 +1,46 @@
+CREATE TABLE Subtraction
+(
+Subtraction_Id VARCHAR2(20),
+Subtract_DATE DATE NOT NULL,
+Donation_Male NUMBER(3,0),
+Donation_Female NUMBER(3,0),
+Donation_Undefined NUMBER(3,0),
+Sale_Male NUMBER(3,0),
+Sale_Female NUMBER(3,0),
+Sale_Undefined NUMBER(3,0),
+Exchange_Male NUMBER(3,0),
+Exchange_Female NUMBER(3,0),
+Exchange_Undefined NUMBER(3,0),
+Died_Male NUMBER(3,0),
+Died_Female NUMBER(3,0),
+Died_Undefined NUMBER(3,0),
+CONSTRAINT Sub_Subtraction_Id_pk PRIMARY KEY(Subtraction_Id),
+CONSTRAINT Sub_Donation_Male_ck CHECK(Donation_Male>=0),
+CONSTRAINT Sub_Donation_Female_ck CHECK(Donation_Female>=0),
+CONSTRAINT Sub_Donation_Undefined_ck CHECK(Donation_Undefined>=0),
+CONSTRAINT Sub_Sale_Male_ck CHECK(Sale_Male>=0),
+CONSTRAINT Sub_Sale_Female_ck CHECK(Sale_Female>=0),
+CONSTRAINT Sub_Sale_Undefined_ck CHECK(Sale_Undefined>=0),
+CONSTRAINT Sub_Exchange_Male_ck CHECK(Exchange_Male>=0),
+CONSTRAINT Sub_Exchange_Female_ck CHECK(Exchange_Female>=0),
+CONSTRAINT Sub_Exchange_Undefined_ck CHECK(Exchange_Undefined>=0),
+CONSTRAINT Sub_Died_Male_ck CHECK(Died_Male>=0),
+CONSTRAINT Sub_Died_Female_ck CHECK(Died_Female>=0),
+CONSTRAINT Sub_Died_Undefined_ck CHECK(Died_Undefined>=0)
+);
+
+SELECT * FROM Subtraction
+INSERT INTO Subtraction(Subtraction_Id,Subtract_DATE,Donation_Male,Donation_Female,Donation_Undefined,Sale_Male,Sale_Female,Sale_Undefined,Exchange_Male,Exchange_Female,Exchange_Undefined,Died_Male,Died_Female,Died_Undefined)
+VALUES('Sub-0001',to_date('31-12-2016','dd-mm-yyyy'),'0','0','1','0','1','0','0','1','2','0','0','1');
+
+INSERT INTO Subtraction(Subtraction_Id,Subtract_DATE,Donation_Male,Donation_Female,Donation_Undefined,Sale_Male,Sale_Female,Sale_Undefined,Exchange_Male,Exchange_Female,Exchange_Undefined,Died_Male,Died_Female,Died_Undefined)
+VALUES('Sub-0002',to_date('31-12-1015','dd-mm-yyyy'),'0','0','1','0','1','0','0','1','2','0','0','1');
+
+INSERT INTO Subtraction(Subtraction_Id,Subtract_DATE,Donation_Male,Donation_Female,Donation_Undefined,Sale_Male,Sale_Female,Sale_Undefined,Exchange_Male,Exchange_Female,Exchange_Undefined,Died_Male,Died_Female,Died_Undefined)
+VALUES('Sub-0003',to_date('31-12-1015','dd-mm-yyyy'),'1','0','1','0','1','0','0','1','2','2','0','1');
+
+INSERT INTO Subtraction(Subtraction_Id,Subtract_DATE,Donation_Male,Donation_Female,Donation_Undefined,Sale_Male,Sale_Female,Sale_Undefined,Exchange_Male,Exchange_Female,Exchange_Undefined,Died_Male,Died_Female,Died_Undefined)
+VALUES('Sub-0004',to_date('31-12-1015','dd-mm-yyyy'),'0','0','1','0','1','0','0','1','2','0','1','1');
+
+INSERT INTO Subtraction(Subtraction_Id,Subtract_DATE,Donation_Male,Donation_Female,Donation_Undefined,Sale_Male,Sale_Female,Sale_Undefined,Exchange_Male,Exchange_Female,Exchange_Undefined,Died_Male,Died_Female,Died_Undefined)
+VALUES('Sub-0005',to_date('31-12-1015','dd-mm-yyyy'),'0','1','0','0','1','0','0','1','2','0','0','0');

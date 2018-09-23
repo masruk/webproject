@@ -1,0 +1,14 @@
+CREATE TABLE Income_From_Angling
+(
+Spot_No VARCHAR2(20),
+Account_Id VARCHAR2(20),
+CONSTRAINT Income_Angling_Spot_No_fk FOREIGN KEY(Spot_No) REFERENCES Angling(Spot_No),
+CONSTRAINT Income_Angling_Account_Id_fk FOREIGN KEY(Account_Id) REFERENCES Account_Section(Account_Id)
+);
+
+SELECT * FROM Income_From_Angling
+INSERT INTO Income_From_Angling(Spot_No,Account_Id) VALUES('SP_01','AC-AG001A');
+INSERT INTO Income_From_Angling(Spot_No,Account_Id) VALUES('SP_02','AC-AG001B');
+INSERT INTO Income_From_Angling(Spot_No,Account_Id) VALUES('SP_03','AC-AG001C');
+
+

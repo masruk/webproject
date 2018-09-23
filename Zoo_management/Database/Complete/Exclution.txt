@@ -1,0 +1,14 @@
+CREATE TABLE Exclution
+(
+Cage_No VARCHAR2(20),
+Subtraction_Id VARCHAR2(20),
+CONSTRAINT exclution_cage_No_fk FOREIGN KEY(cage_No) REFERENCES cage(cage_No),
+CONSTRAINT exclution_Subtraction_Id_fk FOREIGN KEY(Subtraction_Id) REFERENCES Subtraction(Subtraction_Id)
+);
+
+SELECT * FROM Exclution
+INSERT INTO Exclution(Cage_No,Subtraction_Id) VALUES('Cg-0001','Sub-0001');
+
+INSERT INTO Exclution(Cage_No,Subtraction_Id) VALUES('Cg-0005','Sub-0004');
+
+INSERT INTO Exclution(Cage_No,Subtraction_Id) VALUES('Cg-0006','Sub-0005');

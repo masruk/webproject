@@ -1,0 +1,17 @@
+CREATE TABLE Angling
+(
+Spot_No VARCHAR2(20),
+Capacity NUMBER,
+Timing VARCHAR2(20),
+No_Of_Boat varchar2(20),
+CONSTRAINT Angling_Spot_No_pk PRIMARY KEY(Spot_No),
+CONSTRAINT Angling_Capacity_ck CHECK(Capacity>0)
+);
+
+SELECT * FROM Angling
+INSERT INTO Angling(Spot_No,Capacity,Timing,No_Of_Boat) VALUES()
+
+
+INSERT INTO Angling(spot_no,capacity,timing,no_of_boat)values('SP_01','4','30 min','ST_01');
+INSERT INTO Angling(spot_no,capacity,timing,no_of_boat)values('SP_02','3','30 min','ST_02');
+INSERT INTO Angling(spot_no,capacity,timing,no_of_boat)values('SP_03','2','30 min','ST_03');

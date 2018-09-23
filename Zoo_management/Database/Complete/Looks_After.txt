@@ -1,0 +1,26 @@
+CREATE TABLE Looks_After
+(
+VHS_Id VARCHAR2(20),
+Animal_Id VARCHAR2(20),
+Unit VARCHAR2(20),
+CONSTRAINT Looks_After_VHS_Id_fk FOREIGN KEY(VHS_Id) REFERENCES Veterinary_Hospital_Section(VHS_Id),
+CONSTRAINT Looks_After_Animal_Id_fk FOREIGN KEY(Animal_Id) REFERENCES Animal(Animal_Id)
+);
+
+SELECT * FROM Looks_After
+INSERT INTO Looks_After(VHS_Id,Animal_Id,Unit) 
+VALUES('VHS-0001','RBT-1','VHS_Car-1');
+
+INSERT INTO Looks_After(VHS_Id,Animal_Id,Unit) 
+VALUES('VHS-0001','RBT-2','VHS_Car-1');
+
+INSERT INTO Looks_After(VHS_Id,Animal_Id,Unit) 
+VALUES('VHS-0001','RBT-3','VHS_Car-1');
+
+INSERT INTO Looks_After(VHS_Id,Animal_Id,Unit) 
+VALUES('VHS-0001','AWL-1','VHS_Car-2');
+
+INSERT INTO Looks_After(VHS_Id,Animal_Id,Unit) 
+VALUES('VHS-0001','AWL-2','VHS_Car-2');
+
+

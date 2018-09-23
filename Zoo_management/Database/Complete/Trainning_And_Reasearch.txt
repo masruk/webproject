@@ -1,0 +1,11 @@
+CREATE TABLE Trainning_And_Reasearch
+(
+Employee_Id VARCHAR2(20),
+RADS_Id VARCHAR2(20),
+CONSTRAINT Trainning_Employee_Id_fk FOREIGN KEY(Employee_Id) REFERENCES Employee(Employee_Id),
+CONSTRAINT Trainning_RADS_Id_fk FOREIGN KEY(RADS_Id) REFERENCES Reasearch_Section(RADS_Id)
+);
+
+SELECT * FROM Trainning_And_Reasearch
+INSERT INTO Trainning_And_Reasearch(Employee_Id,RADS_Id)
+VALUES('E-RD0003','RADS-0011')

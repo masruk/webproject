@@ -1,0 +1,33 @@
+----------------complex view-----------------------
+
+CREATE VIEW DESIGNATED_EMPLOYEE_FOR_ANIMAL("DESIGNATED EMPLOYEE","ANIMAL NAME")
+AS SELECT EMPLOYEE.NAME,ANIMAL.ENGLISH_NAME FROM EMPLOYEE JOIN WORKS_FOR USING(EMPLOYEE_ID) JOIN ANIMAL USING (ANIMAL_ID)
+
+
+----------------simple View------------------------
+
+
+CREATE VIEW EMPLOYEE_VIEW("EMPLOYEE NAME","DATE OF BIRTH","DESIGNATION","SALARY","CITY","GRADE")
+AS SELECT NAME,DATE_OF_BIRTH,DESIGNATION,SALARY,CITY,GRADE FROM EMPLOYEE
+WHERE DATE_OF_BIRTH<= TO_DATE('01-JAN-1990','DD-MON-YYYY')
+WITH READ ONLY CONSTRAINT 
+VIEW_READ_ONLY;
+
+----------Animal---------------
+
+
+CREATE VIEW ANIMAL_FRONT("Animal Id","Animal Name","gender","Date Of Birth","Animal Class","Total Animal") 
+AS SELECT ANIMAL.ANIMAL_ID,ANIMAL.ENGLISH_NAME,ANIMAL.GENDER,ANIMAL.DATE_OF_BIRTH,CATAGORY.CATAGORY_NAME,CATAGORY.NO_OF_ANIMAL FROM ANIMAL JOIN CLASSIFICATION USING(ANIMAL_ID) JOIN CATAGORY USING(CATAGORY_ID)
+
+
+
+
+
+CREATE VIEW animal_catagory('name','catagory') AS
+SELECT animal.english_name,catagory.class_name from animal join animal_classification using(animal_id) join catagory using(catagory_id);
+
+
+create view boat_view("Employee Id","Boat No","Boat Type","Max Capacity","Riding Zone","Cost","Name","DOB","Designation","salary","city","street no","street name","house","joining date","grade","phone") AS
+select * from boat_riding join related_with_boat_riding using(boat_no) join employee using(EMPLOYEE_ID) join Phone_No using(Employee_id);
+
+

@@ -1,0 +1,33 @@
+SELECT english_name from animal join animal_classification using(animal_id) join catagory using(catagory_id) where UPPER(catagory.class_name)=UPPER('mammals');
+
+
+
+
+
+
+
+
+SELECT Employee.name,Designation,Cage_no,animal.English_name,catagory.class_name,caging.nick_name, addition.add_date,food.ITEM_NAME,food.SCALE_PER_DAY FROM Employee join works_for using(Employee_Id) join animal using(animal_id) join caging using(animal_id) join cage using(cage_no) join INCLUSION using(cage_no) join addition using(addition_no) join fooding using(animal_id) join food using(food_id) join animal_classification using(animal_id) join catagory using (catagory_id);
+
+
+
+
+SELECT Employee.name,Designation,Cage_no,animal.English_name,catagory.class_name,caging.nick_name, addition.add_date,food.ITEM_NAME,food.SCALE_PER_DAY,food.TIMES,food.CALORY_PER_UNIT,food.CALORY_PER_UNIT FROM Employee join works_for using(Employee_Id) join animal using(animal_id) join caging using(animal_id) join cage using(cage_no) join INCLUSION using(cage_no) join addition using(addition_no) join fooding using(animal_id) join food using(food_id) join animal_classification using(animal_id) join catagory using (catagory_id);
+
+
+
+select * from boat_riding join related_with_boat_riding using(boat_no) join employee using(EMPLOYEE_ID) join Phone_No using(Employee_id)
+
+
+
+
+Bangladesh National Zoo is having 130 acre of lake which contains plenty of water with a very charming view. To enhance the enjoyment of visitors zoo authority introduced a boat riding club with all updated boat riding facilities.About <<.$num_of_boat.>> of <<.$num_of_type.>> types can be sail over more than <.$num_of_area.> area enchanting enjoyment.
+
+
+select count("Boat No") from boat_view
+
+select count(Distinct "Boat Type") from boat_view
+
+select count(Distinct "Riding Zone") from boat_view
+
+select "Boat No","Boat Type","Max Capacity","Riding Zone","Cost","Name","phone" from boat_view

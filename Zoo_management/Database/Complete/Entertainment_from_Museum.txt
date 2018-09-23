@@ -1,0 +1,11 @@
+CREATE TABLE Entertainment_From_Museum
+(
+Entertainment_Id VARCHAR2(20),
+Museum_Id VARCHAR2(20),
+CONSTRAINT Ent_From_MS_Ent_Id_fk FOREIGN KEY(Entertainment_Id) REFERENCES entertainment(Entertainment_Id),
+CONSTRAINT Ent_From_MS_Museum_Id_fk FOREIGN KEY(Museum_Id) REFERENCES Museum(Museum_Id)
+);
+
+INSERT INTO Entertainment_From_Museum(Entertainment_Id,Museum_Id) VALUES('EN-MS001A','MS_001');
+
+INSERT INTO Entertainment_From_Museum(Entertainment_Id,Museum_Id) VALUES('EN-MS001B','MS_002');

@@ -1,0 +1,25 @@
+CREATE TABLE Ticketing
+(
+Ticket_Id VARCHAR2(20),
+Ticket_Date DATE NOT NULL,
+Counter_No VARCHAR2(20) NOT NULL,
+Half_Ticket_Sale NUMBER(5,0),
+Half_Ticket_Price NUMBER(5,0),
+Full_Ticket_Sale NUMBER(5,0),
+Full_Ticket_Price NUMBER(5,0),
+CONSTRAINT Ticketing_Ticket_Id_pk PRIMARY KEY(Ticket_Id),
+CONSTRAINT Ticketing_Half_Ticket_Sale_ck CHECK(Half_Ticket_Sale>=0),
+CONSTRAINT Ticketing_Half_Ticket_Price_ck CHECK(Half_Ticket_Price>=0),
+CONSTRAINT Ticketing_Full_Ticket_Sale_ck CHECK(Full_Ticket_Sale>=0),
+CONSTRAINT Ticketing_Full_Ticket_Price_ck CHECK(Full_Ticket_Price>=0)
+);
+
+SELECT * FROM Ticketing
+INSERT INTO Ticketing(Ticket_Id,Ticket_Date,Counter_No,Half_Ticket_Sale,Half_Ticket_Price,Full_Ticket_Sale,Full_Ticket_Price)
+VALUES('TID2001001A',to_date('01-01-2014','DD-MM-YYYY'),'C-1','624','10','1259','20');
+
+INSERT INTO Ticketing(Ticket_Id,Ticket_Date,Counter_No,Half_Ticket_Sale,Half_Ticket_Price,Full_Ticket_Sale,Full_Ticket_Price)
+VALUES('TID2001001B',to_date('01-01-2014','DD-MM-YYYY'),'C-2','800','10','1250','20');
+
+INSERT INTO Ticketing(Ticket_Id,Ticket_Date,Counter_No,Half_Ticket_Sale,Half_Ticket_Price,Full_Ticket_Sale,Full_Ticket_Price)
+VALUES('TID2001001C',to_date('01-01-2014','DD-MM-YYYY'),'C-3','762','10','1159','20');

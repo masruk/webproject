@@ -1,0 +1,18 @@
+CREATE TABLE Income_From_Ticketing
+(
+Account_Id VARCHAR2(20),
+Ticket_Id VARCHAR2(20),
+CONSTRAINT Income_Ticket_Acc_Id_fk FOREIGN KEY(Account_Id) REFERENCES Account_Section(Account_Id),
+CONSTRAINT Income_Ticket_Tic_Id_fk FOREIGN KEY(Ticket_Id) REFERENCES Ticketing(Ticket_Id)
+);
+
+SELECT * FROM Income_From_Ticketing
+INSERT INTO Income_From_Ticketing(Account_Id,Ticket_Id) VALUES('AC-TT001A','TID2001001A');
+
+INSERT INTO Income_From_Ticketing(Account_Id,Ticket_Id) VALUES('AC-TT001B','TID2001001B');
+
+INSERT INTO Income_From_Ticketing(Account_Id,Ticket_Id) VALUES('AC-TT001C','TID2001001B');
+
+
+
+

@@ -1,0 +1,21 @@
+CREATE TABLE Course
+(
+Course_Code VARCHAR2(20),
+Course_Name VARCHAR2(20) NOT NULL,
+Total_Seat NUMBER(4,0),
+Start_Date DATE,
+End_Date DATE,
+Course_Duration VARCHAR2(20),
+CONSTRAINT Course_Course_Code_pk PRIMARY KEY(Course_Code),
+CONSTRAINT Course_Total_Seat_ck CHECK(Total_Seat>=0)
+);
+
+SELECT * FROM Course
+INSERT INTO Course(Course_Code,Course_Name,Total_Seat,Start_Date,End_Date,Course_Duration) VALUES()
+
+INSERT INTO Course(course_code,course_name,total_seat,start_date,end_date,Course_Duration)
+values('Bio-145','Bio-Chemestry','45',to_date('01-01-2016','dd-mm-yyyy'),to_date('31-12-17','dd-mm-yyyy'),'2 Years');
+INSERT INTO Course(course_code,course_name,total_seat,start_date,end_date,Course_Duration)
+values('Bio-105','Bio-Mechanical','25',to_date('01-01-2016','dd-mm-yyyy'),to_date('31-12-17','dd-mm-yyyy'),'2 Years');
+INSERT INTO Course(course_code,course_name,total_seat,start_date,end_date,Course_Duration)
+values('Gen-225','Genetics','15',to_date('01-01-2016','dd-mm-yyyy'),to_date('31-12-16','dd-mm-yyyy'),'1 Years');

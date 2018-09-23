@@ -1,0 +1,16 @@
+home------------------
+select * from animal join animal_classification using (animal_id) join catagory using (catagory_id) join Entertainment_From_Animal Using (Animal_id) join entertainment using(entertainment_id)
+
+
+SELECT DISTINCT REGEXP_REPLACE(ENGLISH_NAME,'-.*','') FROM ANIMAL JOIN ANIMAL_CLASSIFICATION USING (ANIMAL_ID) JOIN CATAGORY USING (CATAGORY_ID) WHERE UPPER(CLASS_NAME)=UPPER('MAMMALS')
+
+SELECT DISTINCT REGEXP_REPLACE(ENGLISH_NAME,'-.*','') FROM ANIMAL JOIN ANIMAL_CLASSIFICATION USING (ANIMAL_ID) JOIN CATAGORY USING (CATAGORY_ID) WHERE UPPER(CLASS_NAME)=UPPER('BIRD')
+
+SELECT DISTINCT REGEXP_REPLACE(ENGLISH_NAME,'-.*','') FROM ANIMAL JOIN ANIMAL_CLASSIFICATION USING (ANIMAL_ID) JOIN CATAGORY USING (CATAGORY_ID) WHERE UPPER(CLASS_NAME)=UPPER('CARNIVORES')
+
+SELECT COUNT(NUMBER_OF_ANIMAL) FROM CATAGORY WHERE UPPER(CLASS_NAME)=UPPER('BIRD')
+
+
+animal-------------------------------------
+
+Main attractioin of Bangladesh National Zoo is different species of Animal. This zoo is enriched with ".$num_of_animal." of ".$num_of_category." categories.There are ".$num_of_harbivores." harbivores,".$num_of_carnivores." Carnivores,".$num_of_mammals." Mammals,".$num_of_Reptiles."Reptiles,".$num_of_Birds."Birds and more than ".$num_of_fish." fishes.

@@ -1,0 +1,12 @@
+CREATE TABLE Entertainment_From_Angling
+(
+Entertainment_Id VARCHAR2(20),
+Spot_No VARCHAR2(20),
+CONSTRAINT Ent_From_Ang_Ent_Id_fk FOREIGN KEY(Entertainment_Id) REFERENCES entertainment(Entertainment_Id),
+CONSTRAINT Ent_From_Ang_Spot_No_fk FOREIGN KEY(Spot_No) REFERENCES Angling(Spot_No)
+);
+
+SELECT * FROM Entertainment_From_Angling
+INSERT INTO Entertainment_From_Angling(Entertainment_Id,Spot_No) VALUES('EN-AG001','SP_01');
+INSERT INTO Entertainment_From_Angling(Entertainment_Id,Spot_No) VALUES('EN-AG001','SP_02');
+INSERT INTO Entertainment_From_Angling(Entertainment_Id,Spot_No) VALUES('EN-AG001','SP_03');

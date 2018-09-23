@@ -1,0 +1,10 @@
+CREATE TABLE Control
+(
+Security_Id VARCHAR2(20),
+Control_Id VARCHAR2(20),
+CONSTRAINT Control_Security_Id_fk FOREIGN KEY(Security_Id) REFERENCES Security_Branch(Security_Id),
+CONSTRAINT Control_Control_Id_fk FOREIGN KEY(Control_Id) REFERENCES Security_Control(Control_Id)
+);
+
+SELECT * FROM Control
+INSERT INTO Control(Security_Id,Control_Id) VALUES('SB-01','SC-01')

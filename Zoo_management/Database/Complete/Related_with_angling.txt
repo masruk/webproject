@@ -1,0 +1,11 @@
+CREATE TABLE Related_With_Angling
+(
+Employee_Id VARCHAR2(20),
+Spot_No VARCHAR2(20),
+CONSTRAINT RELW_Angling_Employee_Id_fk FOREIGN KEY(Employee_Id) REFERENCES Employee(Employee_Id),
+CONSTRAINT RELW_Angling_spot_No_fk FOREIGN KEY(spot_No) REFERENCES Angling(spot_No)
+);
+
+insert into Related_with_angling(employee_id,spot_no)values('E-AG0001','SP_01');
+insert into Related_with_angling(employee_id,spot_no)values('E-AG0002','SP_02');
+insert into Related_with_angling(employee_id,spot_no)values('E-AG0003','SP_03');

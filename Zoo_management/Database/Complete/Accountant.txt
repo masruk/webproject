@@ -1,0 +1,11 @@
+CREATE TABLE Accountant
+(
+Employee_Id VARCHAR2(20),
+Account_Id VARCHAR2(20),
+CONSTRAINT Accountant_Employee_Id_fk FOREIGN KEY(Employee_Id) REFERENCES Employee(Employee_Id),
+CONSTRAINT Accountant_Account_Id_fk FOREIGN KEY(Account_Id) REFERENCES Account_Section(Account_Id)
+);
+
+SELECT * FROM Accountant
+INSERT INTO Accountant(Employee_Id,Account_Id)VALUES('E-AC0001','AC-0001')
+INSERT INTO Accountant(Employee_Id,Account_Id)VALUES('E-AC0002','AC-0001')

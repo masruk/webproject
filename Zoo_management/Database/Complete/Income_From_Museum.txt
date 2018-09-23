@@ -1,0 +1,12 @@
+CREATE TABLE Income_From_Museum
+(
+Museum_Id VARCHAR2(20),
+Account_Id VARCHAR2(20),
+CONSTRAINT Income_Mus_Museum_Id_fk FOREIGN KEY(Museum_Id) REFERENCES Museum(Museum_Id),
+CONSTRAINT Income_Mus_Account_Id_fk FOREIGN KEY(Account_Id) REFERENCES Account_Section(Account_Id)
+);
+
+SELECT * FROM Income_From_Museum
+INSERT INTO Income_From_Museum(Museum_Id,Account_Id) VALUES('MS-001','AC-MS001A');
+INSERT INTO Income_From_Museum(Museum_Id,Account_Id) VALUES('MS-002','AC-MS001B');
+

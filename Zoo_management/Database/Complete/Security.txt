@@ -1,0 +1,17 @@
+CREATE TABLE Security
+(
+Employee_Id VARCHAR2(20),
+Security_Id VARCHAR2(20),
+Shift VARCHAR2(20),
+Security_Day VARCHAR2(20),
+CONSTRAINT Security_Employee_Id_fk FOREIGN KEY(Employee_Id) REFERENCES Employee(Employee_Id),
+CONSTRAINT Security_Security_Id_fk FOREIGN KEY(Security_Id) REFERENCES Security_Branch(Security_Id)
+);
+
+SELECT * FROM Security
+INSERT INTO Security(Employee_Id,Security_Id,Shift,Security_Day) VALUES('E-SB0001','SB-01','Morning','Sunday');
+
+INSERT INTO Security(Employee_Id,Security_Id,Shift,Security_Day) VALUES('E-SB0002','SB-01','Afternoon','Sunday');
+
+INSERT INTO Security(Employee_Id,Security_Id,Shift,Security_Day) VALUES('E-SB0003','SB-01','Evenning','Sunday');
+

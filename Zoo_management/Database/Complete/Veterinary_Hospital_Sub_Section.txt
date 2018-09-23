@@ -1,0 +1,28 @@
+CREATE TABLE V_H_Sub_Section
+(
+VHS_Section_Id VARCHAR2(20),
+Treatment_Catagory VARCHAR2(20),
+Block_No VARCHAR2(20),
+Total_Lab NUMBER(3,0),
+CONSTRAINT VHS_Sub_VHS_Sec_Id_pk PRIMARY KEY(VHS_Section_Id),
+CONSTRAINT VHS_Sub_Total_Lab_ck CHECK(Total_Lab>=0)
+);
+
+SELECT * FROM V_H_Sub_Section
+INSERT INTO V_H_Sub_Section(VHS_Section_Id,Treatment_Catagory,Block_No,Total_Lab)
+VALUES('VHS-SUB-A-1','Carnivorous','1A','4');
+
+INSERT INTO V_H_Sub_Section(VHS_Section_Id,Treatment_Catagory,Block_No,Total_Lab)
+VALUES('VHS-SUB-B-1','Large Herbivores','1B','3');
+
+INSERT INTO V_H_Sub_Section(VHS_Section_Id,Treatment_Catagory,Block_No,Total_Lab)
+VALUES('VHS-SUB-C-1','Mammals','1C','4');
+
+INSERT INTO V_H_Sub_Section(VHS_Section_Id,Treatment_Catagory,Block_No,Total_Lab)
+VALUES('VHS-SUB-D-1','Reptiles','1D','2');
+
+INSERT INTO V_H_Sub_Section(VHS_Section_Id,Treatment_Catagory,Block_No,Total_Lab)
+VALUES('VHS-SUB-E-1','Bird','1E','4');
+
+INSERT INTO V_H_Sub_Section(VHS_Section_Id,Treatment_Catagory,Block_No,Total_Lab)
+VALUES('VHS-SUB-F-1','Fish','1F','6');

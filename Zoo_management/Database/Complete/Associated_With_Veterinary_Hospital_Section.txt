@@ -1,0 +1,13 @@
+CREATE TABLE Associated_With_VHS
+(
+Employee_Id VARCHAR2(20),
+VHS_Id VARCHAR2(20),
+CONSTRAINT Associated_Employee_Id_fk FOREIGN KEY(Employee_Id) REFERENCES Employee(Employee_Id),
+CONSTRAINT Associated_VHS_Id_fk FOREIGN KEY(VHS_Id) REFERENCES Veterinary_Hospital_Section(VHS_Id)
+);
+
+SELECT * FROM Associated_With_VHS
+INSERT INTO Associated_With_VHS(Employee_Id,VHS_Id) VALUES('E-VH0001','VHS-0001');
+INSERT INTO Associated_With_VHS(Employee_Id,VHS_Id) VALUES('E-VH0002','VHS-0001');
+INSERT INTO Associated_With_VHS(Employee_Id,VHS_Id) VALUES('E-VH0003','VHS-0001');
+

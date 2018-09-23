@@ -1,0 +1,29 @@
+Welcome to Bangladesh National Zoo
+
+
+Bangladesh National Zoo located in the Mirpur section of the capital city of Bangladesh.Bangladesh National Zoo is home to more than <SELECT SUM(NUMBER_OF_ANIMAL) FROM CATAGORY;> animals from <SELECT COUNT(DISTINCT CLASS_NAME) FROM CATAGORY> catagories and is a popular place to spend the day, both for Bangladeshis and International visitors usually from <SELECT DISTINCT OPENNING_TIME FROM ENTERTAINMENT WHERE UPPER(ENTERTAINMENT_DAY)=UPPER('MONDAY');>am to <SELECT DISTINCT CLOSING_TIME FROM ENTERTAINMENT WHERE UPPER(ENTERTAINMENT_DAY)=UPPER('MONDAY');>pm. Established in 1974, The Bangladesh National Zoo has been developed and improved over the years, and is widely considered to be one of the best zoos in Bangladesh, receiving hundreds of thousands of visitors each year.
+
+Visitors to the Bangladesh National Zoo will appreciate the way the animal enclosures are designed to make each occupant feel at home by mimicking the animal’s natural environment as closely as possible. Of course, the animals are safely behind bars, but the overall appearance of the zoo, with its tree-lined pathways and <SELECT COUNT(SPOT_NO) FROM PICNIC_SPOT> picnic spotS and large tranquil lakes that host migratory water-fowl each winter, gives one the impression of being out in the country rather than within the boundaries of one of the busiest cities in Bangladesh.
+
+Mammals at the zoo include <SELECT DISTINCT REGEXP_REPLACE(ENGLISH_NAME,'-.*','') FROM ANIMAL JOIN ANIMAL_CLASSIFICATION USING (ANIMAL_ID) JOIN CATAGORY USING (CATAGORY_ID) WHERE UPPER(CLASS_NAME)=UPPER('MAMMALS')>. The majestic Royal Bengal Tigers are a highlight of the Bangladesh National Zoo– which is fitting, seeing as it is the national animal of Bangladesh.
+
+The aviaries at the Bangladesh National Zoo house more than <SELECT COUNT(NUMBER_OF_ANIMAL) FROM CATAGORY WHERE UPPER(CLASS_NAME)=UPPER('BIRD')> birds and visitors can expect to see <<SELECT ENGLISH_NAME FROM ANIMAL JOIN ANIMAL_CLASSIFICATION USING (ANIMAL_ID) JOIN CATAGORY USING (CATAGORY_ID) WHERE UPPER(CLASS_NAME)=UPPER('BIRD')> and too many others to mention.while The Museum provides many informative displays relating to the animals as well as the history of the zoo.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

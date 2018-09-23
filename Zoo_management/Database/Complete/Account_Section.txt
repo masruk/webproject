@@ -1,0 +1,65 @@
+CREATE TABLE Account_Section
+(
+Account_Id VARCHAR2(20),
+AS_Day DATE,
+Income_Per_Day NUMBER(8,2),
+Expendeture_Per_Day NUMBER(8,2),
+Net_Income_Per_Day AS (Income_Per_Day-Expendeture_Per_Day),
+CONSTRAINT Acc_Sec_Account_Id_pk PRIMARY KEY(Account_Id),
+CONSTRAINT Acc_Sec_Income_ck CHECK(Income_Per_Day>=0),
+CONSTRAINT Acc_Sec_Expend_ck CHECK(Expendeture_Per_Day>=0),
+CONSTRAINT Acc_Sec_Net_Income_ck CHECK(Net_Income_Per_Day>=0)
+);														
+
+SELECT * FROM Account_Section 
+
+INSERT INTO Account_Section(Account_Id,AS_Day,Income_Per_Day,Expendeture_Per_Day)
+VALUES('AC-AG001A',to_date('01-01-2014','DD-MM-YYYY'),'50000.00','15000.00');
+
+INSERT INTO Account_Section(Account_Id,AS_Day,Income_Per_Day,Expendeture_Per_Day)
+VALUES('AC-AG001B',to_date('01-01-2014','DD-MM-YYYY'),'45000.00','16500.00');
+
+INSERT INTO Account_Section(Account_Id,AS_Day,Income_Per_Day,Expendeture_Per_Day)
+VALUES('AC-AG001C',to_date('01-01-2014','DD-MM-YYYY'),'42000.00','15000.00');
+
+INSERT INTO Account_Section(Account_Id,AS_Day,Income_Per_Day,Expendeture_Per_Day)
+VALUES('AC-PS001A',to_date('01-01-2014','DD-MM-YYYY'),'18000.00','13500.00');
+
+INSERT INTO Account_Section(Account_Id,AS_Day,Income_Per_Day,Expendeture_Per_Day)
+VALUES('AC-PS001B',to_date('01-01-2014','DD-MM-YYYY'),'14000.00','9000.00');
+
+INSERT INTO Account_Section(Account_Id,AS_Day,Income_Per_Day,Expendeture_Per_Day)
+VALUES('AC-PS001C',to_date('01-01-2014','DD-MM-YYYY'),'25000.00','15500.00');
+
+
+INSERT INTO Account_Section(Account_Id,AS_Day,Income_Per_Day,Expendeture_Per_Day)
+VALUES('AC-BR001A',to_date('01-01-2014','DD-MM-YYYY'),'10000.00','4500.00');
+
+INSERT INTO Account_Section(Account_Id,AS_Day,Income_Per_Day,Expendeture_Per_Day)
+VALUES('AC-BR001B',to_date('01-01-2014','DD-MM-YYYY'),'8000.00','3500.00');
+
+INSERT INTO Account_Section(Account_Id,AS_Day,Income_Per_Day,Expendeture_Per_Day)
+VALUES('AC-BR001C',to_date('01-01-2014','DD-MM-YYYY'),'18000.00','8500.00');
+
+INSERT INTO Account_Section(Account_Id,AS_Day,Income_Per_Day,Expendeture_Per_Day)
+VALUES('AC-MS001A',to_date('01-01-2014','DD-MM-YYYY'),'8000.00','2500.00');
+
+INSERT INTO Account_Section(Account_Id,AS_Day,Income_Per_Day,Expendeture_Per_Day)
+VALUES('AC-MS001B',to_date('01-01-2014','DD-MM-YYYY'),'7000.00','2500.00');
+
+INSERT INTO Account_Section(Account_Id,AS_Day,Income_Per_Day,Expendeture_Per_Day)
+VALUES('AC-TT001A',to_date('01-01-2014','DD-MM-YYYY'),'31240.00','7500.00');
+
+INSERT INTO Account_Section(Account_Id,AS_Day,Income_Per_Day,Expendeture_Per_Day)
+VALUES('AC-TT001B',to_date('01-01-2014','DD-MM-YYYY'),'33000.00','7500.00');
+
+INSERT INTO Account_Section(Account_Id,AS_Day,Income_Per_Day,Expendeture_Per_Day)
+VALUES('AC-TT001C',to_date('01-01-2014','DD-MM-YYYY'),'30800.00','7500.00');
+
+INSERT INTO Account_Section(Account_Id,AS_Day,Income_Per_Day,Expendeture_Per_Day)
+VALUES('AC-AS001B',to_date('01-01-2014','DD-MM-YYYY'),'33000.00','7500.00');
+
+INSERT INTO Account_Section(Account_Id,AS_Day,Income_Per_Day,Expendeture_Per_Day)
+VALUES('AC-AS001C',to_date('01-01-2014','DD-MM-YYYY'),'30800.00','7500.00');
+
+

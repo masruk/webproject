@@ -1,0 +1,20 @@
+CREATE TABLE Caging
+(
+Animal_Id VARCHAR2(20),
+Cage_No VARCHAR2(20),
+Nick_Name VARCHAR2(20),
+CONSTRAINT caging_Animal_Id_fk FOREIGN KEY(Animal_Id) REFERENCES Animal(Animal_Id),
+CONSTRAINT caging_cage_No_fk FOREIGN KEY(cage_No) REFERENCES cage(cage_No),
+CONSTRAINT caging_Nick_Name_uk UNIQUE(Nick_Name)
+);
+
+SELECT * FROM Caging
+INSERT INTO Caging(Animal_Id,Cage_No,Nick_Name)VALUES('RBT-1','Cg-0009','Sher Khan');
+INSERT INTO Caging(animal_id, cage_no, nick_name)values('RBT-3','Cg-0001','Zara');
+INSERT INTO Caging(animal_id, cage_no, nick_name)values('RH-1','Cg-0002','Rocky');
+INSERT INTO Caging(animal_id, cage_no, nick_name)values('AWL-1','Cg-0003','Kuvo');
+INSERT INTO Caging(animal_id, cage_no, nick_name)values('AWL-2','Cg-0004','Kayora');
+INSERT INTO Caging(animal_id, cage_no, nick_name)values('INL-1','Cg-0005','Duke');
+INSERT INTO Caging(animal_id, cage_no, nick_name)values('RBT-2','Cg-0006','Bulbul');
+INSERT INTO Caging(animal_id, cage_no, nick_name)values('HR-2','Cg-0007','koheli');
+INSERT INTO Caging(animal_id, cage_no, nick_name)values('AE-2','Cg-0008','chandra');

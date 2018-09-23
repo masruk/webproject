@@ -1,0 +1,191 @@
+CREATE TABLE Animal_Classification
+(
+Animal_Id VARCHAR2(20),
+Catagory_Id VARCHAR2(20),
+CONSTRAINT class_Animal_Id_fk FOREIGN KEY(Animal_Id) REFERENCES Animal(Animal_Id),
+CONSTRAINT class_Catagory_Id_fk FOREIGN KEY(Catagory_Id) REFERENCES Catagory(Catagory_Id)
+);
+
+
+SELECT * FROM Animal_Classification
+INSERT INTO Animal_Classification(Animal_Id,Catagory_Id) VALUES('RBT-1','Car-0001');
+
+INSERT INTO Animal_Classification(animal_id,Catagory_Id)VALUES('RBT-2','Car-0002');
+INSERT INTO Animal_Classification(animal_id,Catagory_Id)VALUES('RBT-3','Car-0003');
+INSERT INTO Animal_Classification(animal_id,Catagory_Id)VALUES('RBT-4','Car-0004');
+INSERT INTO Animal_Classification(animal_id,Catagory_Id)VALUES('RBT-5','Car-0005');
+INSERT INTO Animal_Classification(animal_id,Catagory_Id)VALUES('AWL-1','Car-0006');
+INSERT INTO Animal_Classification(animal_id,Catagory_Id)VALUES('AWL-2','Car-0007');
+INSERT INTO Animal_Classification(animal_id,Catagory_Id)VALUES('INL-1','Car-0008');
+INSERT INTO Animal_Classification(animal_id,Catagory_Id)VALUES('INL-2','Car-0009');
+INSERT INTO Animal_Classification(animal_id,Catagory_Id)VALUES('INL-3','Car-0010');
+INSERT INTO Animal_Classification(animal_id,Catagory_Id)VALUES('JKL-1','Car-0011');
+INSERT INTO Animal_Classification(animal_id,Catagory_Id)VALUES('SDH-1','Car-0012');
+INSERT INTO Animal_Classification(animal_id,Catagory_Id)VALUES('STH-1','Car-0013');
+INSERT INTO Animal_Classification(animal_id,Catagory_Id)VALUES('AE-1','Her-0001');
+INSERT INTO Animal_Classification(animal_id,Catagory_Id)VALUES('AE-2','Her-0002');
+INSERT INTO Animal_Classification(animal_id,Catagory_Id)VALUES('GFE-1','Her-0003');
+INSERT INTO Animal_Classification(animal_id,Catagory_Id)VALUES('GFE-2','Her-0004');
+INSERT INTO Animal_Classification(animal_id,Catagory_Id)VALUES('GFE-3','Her-0005');
+INSERT INTO Animal_Classification(animal_id,Catagory_Id)VALUES('DR-1','Her-0006');
+INSERT INTO Animal_Classification(animal_id,Catagory_Id)VALUES('DR-2','Her-0007');
+INSERT INTO Animal_Classification(animal_id,Catagory_Id)VALUES('HR-1','Her-0008');
+INSERT INTO Animal_Classification(animal_id,Catagory_Id)VALUES('HR-2','Her-0009');
+INSERT INTO Animal_Classification(animal_id,Catagory_Id)VALUES('HR-3','Her-0010');
+INSERT INTO Animal_Classification(animal_id,Catagory_Id)VALUES('ZB-1','Her-0011');
+INSERT INTO Animal_Classification(animal_id,Catagory_Id)VALUES('RH-1','Her-0012');
+INSERT INTO Animal_Classification(animal_id,Catagory_Id)VALUES('HP-1','Her-0013');
+INSERT INTO Animal_Classification(animal_id,Catagory_Id)VALUES('DG-1','Mam-0001');
+INSERT INTO Animal_Classification(animal_id,Catagory_Id)VALUES('RB-1','Mam-0002');
+INSERT INTO Animal_Classification(animal_id,Catagory_Id)VALUES('HGB-1','Mam-0003');
+INSERT INTO Animal_Classification(animal_id,Catagory_Id)VALUES('SQL-1','Mam-0004');
+INSERT INTO Animal_Classification(animal_id,Catagory_Id)VALUES('KNG-1','Mam-0005');
+INSERT INTO Animal_Classification(animal_id,Catagory_Id)VALUES('PCP-1','Mam-0006');
+INSERT INTO Animal_Classification(animal_id,Catagory_Id)VALUES('BT-1','Mam-0007');
+INSERT INTO Animal_Classification(animal_id,Catagory_Id)VALUES('CB-1','Rep-0001');
+INSERT INTO Animal_Classification(animal_id,Catagory_Id)VALUES('IPT-1','Rep-0002');
+INSERT INTO Animal_Classification(animal_id,Catagory_Id)VALUES('TT-1','Rep-0003');
+INSERT INTO Animal_Classification(animal_id,Catagory_Id)VALUES('MC-1','Rep-0004');
+INSERT INTO Animal_Classification(animal_id,Catagory_Id)VALUES('EC-1','Rep-0005');
+INSERT INTO Animal_Classification(animal_id,Catagory_Id)VALUES('GL-1','Rep-0006');
+INSERT INTO Animal_Classification(animal_id,Catagory_Id)VALUES('TKC-1','Fis-0001');
+INSERT INTO Animal_Classification(animal_id,Catagory_Id)VALUES('SMF-1','Fis-0003');
+INSERT INTO Animal_Classification(animal_id,Catagory_Id)VALUES('NHF-1','Fis-0004');
+INSERT INTO Animal_Classification(animal_id,Catagory_Id)VALUES('SDL-1','Fis-0006');
+INSERT INTO Animal_Classification(animal_id,Catagory_Id)VALUES('PNH-1','Fis-0007');
+INSERT INTO Animal_Classification(animal_id,Catagory_Id)VALUES('OS-1','Brd-0001');
+INSERT INTO Animal_Classification(animal_id,Catagory_Id)VALUES('EM-1','Brd-0002');
+INSERT INTO Animal_Classification(animal_id,Catagory_Id)VALUES('LAJ-1','Brd-0003');
+INSERT INTO Animal_Classification(animal_id,Catagory_Id)VALUES('BNH-1','Brd-0004');
+INSERT INTO Animal_Classification(animal_id,Catagory_Id)VALUES('PHN-1','Brd-0005');
+INSERT INTO Animal_Classification(animal_id,Catagory_Id)VALUES('CEG-1','Brd-0006');
+INSERT INTO Animal_Classification(animal_id,Catagory_Id)VALUES('GCM-1','Brd-0007');
+INSERT INTO Animal_Classification(animal_id,Catagory_Id)VALUES('LCM-1','Brd-0008');
+INSERT INTO Animal_Classification(animal_id,Catagory_Id)VALUES('JLP-1','Brd-0009');
+INSERT INTO Animal_Classification(animal_id,Catagory_Id)VALUES('BRP-1','Brd-0010');
+INSERT INTO Animal_Classification(animal_id,Catagory_Id)VALUES('WHC-1','Brd-0011');
+INSERT INTO Animal_Classification(animal_id,Catagory_Id)VALUES('HLM-1','Brd-0012');
+INSERT INTO Animal_Classification(animal_id,Catagory_Id)VALUES('MPR-1','Brd-0013');
+INSERT INTO Animal_Classification(animal_id,Catagory_Id)VALUES('KNF-1','Brd-0014');
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

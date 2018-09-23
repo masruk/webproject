@@ -1,0 +1,66 @@
+CREATE TABLE Food
+(
+Food_Id VARCHAR2(20),
+Item_Name VARCHAR2(20) NOT NULL,
+Times NUMBER(3,0),
+Scale_Per_Day NUMBER(5,3),
+Cost_Per_Unit NUMBER(5,2),
+Calory_Per_Unit NUMBER(6,2),
+CONSTRAINT FooD_Food_Id_pk PRIMARY KEY(Food_Id),
+CONSTRAINT Food_Times_ck CHECK(Times>=0),
+CONSTRAINT Food_Scale_Per_Day_ck CHECK(Scale_Per_Day>=0),
+CONSTRAINT Food_Cost_Per_Unit_ck CHECK(Cost_Per_Unit>=0),
+CONSTRAINT Food_Calory_Per_Unit_ck CHECK(Calory_Per_Unit>=0)
+);
+
+SELECT * FROM Food
+INSERT INTO Food(Food_Id,Item_Name,Times,Scale_Per_Day,Cost_Per_Unit,Calory_Per_Unit)
+VALUES('Fd-0001','Meat','3','10','400','1100');
+
+INSERT INTO Food(Food_Id,Item_Name,Times,Scale_Per_Day,Cost_Per_Unit,Calory_Per_Unit)
+VALUES('Fd-0002','Meat','2','10','400','1150');
+
+INSERT INTO Food(Food_Id,Item_Name,Times,Scale_Per_Day,Cost_Per_Unit,Calory_Per_Unit)
+VALUES('Fd-0003','Meat','4','8','500','1200');
+
+INSERT INTO Food(Food_Id,Item_Name,Times,Scale_Per_Day,Cost_Per_Unit,Calory_Per_Unit)
+VALUES('Fd-0004','Meat','6','10','350','1100');
+
+INSERT INTO Food(Food_Id,Item_Name,Times,Scale_Per_Day,Cost_Per_Unit,Calory_Per_Unit)
+VALUES('Fd-0005','Meat','8','8','200','1200');
+
+INSERT INTO Food(Food_Id,Item_Name,Times,Scale_Per_Day,Cost_Per_Unit,Calory_Per_Unit)
+VALUES('Fd-0006','Meat','2','4','240','1500');
+
+INSERT INTO Food(Food_Id,Item_Name,Times,Scale_Per_Day,Cost_Per_Unit,Calory_Per_Unit)
+VALUES('Fd-0007','Meat','5','12','270','2400');
+
+INSERT INTO Food(Food_Id,Item_Name,Times,Scale_Per_Day,Cost_Per_Unit,Calory_Per_Unit)
+VALUES('Fd-0008','Wheat','3','2','50','400');
+
+INSERT INTO Food(Food_Id,Item_Name,Times,Scale_Per_Day,Cost_Per_Unit,Calory_Per_Unit)
+VALUES('Fd-0009','Berly','4','12','12','800');
+
+INSERT INTO Food(Food_Id,Item_Name,Times,Scale_Per_Day,Cost_Per_Unit,Calory_Per_Unit)
+VALUES('Fd-0010','Rice','3','12','50','600');
+
+INSERT INTO Food(Food_Id,Item_Name,Times,Scale_Per_Day,Cost_Per_Unit,Calory_Per_Unit)
+VALUES('Fd-0011','Meat','3','2','120','1100');
+
+INSERT INTO Food(Food_Id,Item_Name,Times,Scale_Per_Day,Cost_Per_Unit,Calory_Per_Unit)
+VALUES('Fd-0012','Meat','4','2','350','1700');
+
+INSERT INTO Food(Food_Id,Item_Name,Times,Scale_Per_Day,Cost_Per_Unit,Calory_Per_Unit)
+VALUES('Fd-0013','Meat','3','5','120','3000');
+
+INSERT INTO Food(Food_Id,Item_Name,Times,Scale_Per_Day,Cost_Per_Unit,Calory_Per_Unit)
+VALUES('Fd-0014','Meat','4','6','300','2100');
+
+INSERT INTO Food(Food_Id,Item_Name,Times,Scale_Per_Day,Cost_Per_Unit,Calory_Per_Unit)
+VALUES('Fd-0015','Meat','3','4','500','600');
+
+INSERT INTO Food(Food_Id,Item_Name,Times,Scale_Per_Day,Cost_Per_Unit,Calory_Per_Unit)
+VALUES('Fd-0016','Meat','3','2','550','1400');
+
+INSERT INTO Food(Food_Id,Item_Name,Times,Scale_Per_Day,Cost_Per_Unit,Calory_Per_Unit)
+VALUES('Fd-0017','Vegetable','3','12','30','400');

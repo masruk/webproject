@@ -1,0 +1,10 @@
+CREATE TABLE Sub_Section
+(
+RADS_Id VARCHAR2(50),
+RADS_Section_Id VARCHAR2(20),
+CONSTRAINT Sub_Sec_RADS_Id_fk FOREIGN KEY(RADS_Id) REFERENCES Reasearch_Section(RADS_Id),
+CONSTRAINT Sub_Sec_RADS_Sec_Id_fk FOREIGN KEY(RADS_Section_Id) REFERENCES Reasearch_Sub_Section(RADS_Section_Id)
+);
+
+SELECT * FROM Sub_Section
+INSERT INTO Sub_Section(RADS_Id,RADS_Section_Id) VALUES('RADS-0001','RADS-0001A');

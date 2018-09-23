@@ -1,0 +1,15 @@
+CREATE TABLE Entertainment_From_Picnic_Spot
+(
+Entertainment_Id VARCHAR2(20),
+Spot_No VARCHAR2(20),
+CONSTRAINT Ent_From_Picnic_Ent_Id_fk FOREIGN KEY(Entertainment_Id) REFERENCES entertainment(Entertainment_Id),
+CONSTRAINT Ent_From_Picnic_Spot_No_fk FOREIGN KEY(Spot_No) REFERENCES Picnic_Spot(Spot_No)
+);
+
+SELECT * FROM Entertainment_From_Picnic_Spot
+INSERT INTO Entertainment_From_Picnic_Spot(Entertainment_Id,Spot_No) VALUES('EN-PS001','PS_01');
+
+INSERT INTO Entertainment_From_Picnic_Spot(Entertainment_Id,Spot_No) VALUES('EN-PS001','PS_02');
+
+INSERT INTO Entertainment_From_Picnic_Spot(Entertainment_Id,Spot_No) VALUES('EN-PS001','PS_03');
+

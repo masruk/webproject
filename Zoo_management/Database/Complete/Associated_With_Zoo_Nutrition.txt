@@ -1,0 +1,15 @@
+CREATE TABLE Associated_With_Zoo_Nutrition
+(
+Employee_Id VARCHAR2(20),
+ZANS_Id VARCHAR2(20),
+CONSTRAINT AWZN_Employee_Id_fk FOREIGN KEY(Employee_Id) REFERENCES Employee(Employee_Id),
+CONSTRAINT AWZN_ZANS_Id_fk FOREIGN KEY(ZANS_Id) REFERENCES Zoo_Animal_Nutrition_Section(ZANS_Id)
+);
+
+SELECT * FROM Associated_With_Zoo_Nutrition
+INSERT INTO Associated_With_Zoo_Nutrition(Employee_Id,ZANS_Id) VALUES('E-NT0001','ZANS-0001');
+
+INSERT INTO Associated_With_Zoo_Nutrition(Employee_Id,ZANS_Id) VALUES('E-NT0002','ZANS-0001');
+
+INSERT INTO Associated_With_Zoo_Nutrition(Employee_Id,ZANS_Id) VALUES('E-NT0003','ZANS-0001');
+

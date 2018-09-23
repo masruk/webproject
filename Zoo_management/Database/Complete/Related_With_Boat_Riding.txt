@@ -1,0 +1,21 @@
+CREATE TABLE Related_With_Boat_Riding
+(
+Employee_Id VARCHAR2(20),
+Boat_No VARCHAR2(20),
+CONSTRAINT RWBR_Employee_Id_fk FOREIGN KEY(Employee_Id) REFERENCES Employee(Employee_Id),
+CONSTRAINT RWBR_Boat_No_fk FOREIGN KEY(Boat_No) REFERENCES Boat_Riding(Boat_No)
+);
+
+SELECT * FROM Related_With_Boat_Riding
+INSERT INTO Related_With_Boat_Riding(Employee_Id,Boat_No) VALUES('E-BR0001','101');
+INSERT INTO Related_With_Boat_Riding(Employee_Id,Boat_No) VALUES('E-BR0002','102');
+INSERT INTO Related_With_Boat_Riding(Employee_Id,Boat_No) VALUES('E-BR0003','103');
+INSERT INTO Related_With_Boat_Riding(Employee_Id,Boat_No) VALUES('E-BR0004','104');
+INSERT INTO Related_With_Boat_Riding(Employee_Id,Boat_No) VALUES('E-BR0005','105');
+INSERT INTO Related_With_Boat_Riding(Employee_Id,Boat_No) VALUES('E-BR0006','106');
+INSERT INTO Related_With_Boat_Riding(Employee_Id,Boat_No) VALUES('E-BR0007','107');
+INSERT INTO Related_With_Boat_Riding(Employee_Id,Boat_No) VALUES('E-BR0008','108');
+INSERT INTO Related_With_Boat_Riding(Employee_Id,Boat_No) VALUES('E-BR0009','109');
+INSERT INTO Related_With_Boat_Riding(Employee_Id,Boat_No) VALUES('E-BR0010','110');
+INSERT INTO Related_With_Boat_Riding(Employee_Id,Boat_No) VALUES('E-BR0011','111');
+INSERT INTO Related_With_Boat_Riding(Employee_Id,Boat_No) VALUES('E-BR0012','112');

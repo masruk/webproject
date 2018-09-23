@@ -1,0 +1,12 @@
+CREATE TABLE Conduct
+(
+RADS_Id VARCHAR2(20),
+Course_Code VARCHAR2(20),
+Course_Co_Ordinator VARCHAR2(30),
+CONSTRAINT Conduct_RADS_Id_fk FOREIGN KEY(RADS_Id) REFERENCES Reasearch_Section(RADS_Id),
+CONSTRAINT Conduct_Course_Code_fk FOREIGN KEY(Course_Code) REFERENCES Course(Course_Code)
+);
+
+SELECT * FROM Conduct
+INSERT INTO Conduct(RADS_Id,Course_Code,Course_Co_Ordinator) VALUES('RADS-0001','Bio-145','Dr. Kopa shamsu')
+INSERT INTO Conduct(RADS_Id,Course_Code,Course_Co_Ordinator) VALUES('RADS-0011','Gen-225','Dr. Mahbub');

@@ -1,0 +1,19 @@
+CREATE TABLE Health
+(
+ZANS_Id VARCHAR2(20),
+Animal_Id VARCHAR2(20),
+Unit VARCHAR2(20),
+CONSTRAINT Health_ZANS_Id_fk FOREIGN KEY(ZANS_Id) REFERENCES Zoo_Animal_Nutrition_Section(ZANS_Id),
+CONSTRAINT Health_Animal_Id_fk FOREIGN KEY(Animal_Id) REFERENCES Animal(Animal_Id)
+);
+
+SELECT * FROM Health
+INSERT INTO Health(ZANS_Id,Animal_Id,Unit) VALUES('ZANS-0001','RBT-1','ZT-1');
+
+INSERT INTO Health(ZANS_Id,Animal_Id,Unit) VALUES('ZANS-0001','RBT-2','ZT-1');
+
+INSERT INTO Health(ZANS_Id,Animal_Id,Unit) VALUES('ZANS-0001','AWL-1','ZT-2');
+
+INSERT INTO Health(ZANS_Id,Animal_Id,Unit) VALUES('ZANS-0001','AWL-2','ZT-2');
+
+

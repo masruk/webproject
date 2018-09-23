@@ -1,0 +1,28 @@
+CREATE TABLE Zoo_Animal_Nutrition_Section
+(
+ZANS_Id VARCHAR2(20),
+Branch_Name VARCHAR2(50) NOT NULL,
+Block_No VARCHAR2(20),
+Area_Name VARCHAR2(20),
+Area VARCHAR2(20),
+CONSTRAINT ZANS_ZANS_Id_pk PRIMARY KEY(ZANS_Id)
+);
+
+SELECT * FROM Zoo_Animal_Nutrition_Section
+INSERT INTO Zoo_Animal_Nutrition_Section(ZANS_Id,Branch_Name,Block_No,Area_Name,Area)
+VALUES('ZANS-0001','ZANS-Carnivorous','A','Shimul','Southern');
+
+INSERT INTO Zoo_Animal_Nutrition_Section(ZANS_Id,Branch_Name,Block_No,Area_Name,Area)
+VALUES('ZANS-0002','ZANS-Herbivores','B','Kanchi','Western');
+
+INSERT INTO Zoo_Animal_Nutrition_Section(ZANS_Id,Branch_Name,Block_No,Area_Name,Area)
+VALUES('ZANS-0003','ZANS-Mammals','C','Taimur','Eastern');
+
+INSERT INTO Zoo_Animal_Nutrition_Section(ZANS_Id,Branch_Name,Block_No,Area_Name,Area)
+VALUES('ZANS-0004','ZANS-Reptiles','D','Virat','SouthEast');
+
+INSERT INTO Zoo_Animal_Nutrition_Section(ZANS_Id,Branch_Name,Block_No,Area_Name,Area)
+VALUES('ZANS-0005','ZANS-Bird','E','Afridi','NorthEast');
+
+INSERT INTO Zoo_Animal_Nutrition_Section(ZANS_Id,Branch_Name,Block_No,Area_Name,Area)
+VALUES('ZANS-0006','ZANS-Fish','F','Bokum','Northern');

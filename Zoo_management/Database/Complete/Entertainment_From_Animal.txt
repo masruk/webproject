@@ -1,0 +1,24 @@
+CREATE TABLE Entertainment_From_Animal
+(
+Animal_Id VARCHAR2(20),
+Entertainment_Id VARCHAR2(20),
+CONSTRAINT Ent_From_Ani_Animal_Id_fk FOREIGN KEY(Animal_Id) REFERENCES Animal(Animal_Id),
+CONSTRAINT Ent_From_Ani_Ent_Id_fk FOREIGN KEY(Entertainment_Id) REFERENCES Entertainment(Entertainment_Id)
+);
+
+SELECT * FROM Entertainment_From_Animal
+INSERT INTO Entertainment_From_Animal(Animal_Id,Entertainment_Id) VALUES('RBT-1','EN-AN001');
+
+INSERT INTO Entertainment_From_Animal(Animal_Id,Entertainment_Id) VALUES('RBT-2','EN-AN001');
+
+INSERT INTO Entertainment_From_Animal(Animal_Id,Entertainment_Id) VALUES('AWL-1','EN-AN001');
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,61 @@
+1.	select * from vetenary_hospital_section as vhs join details  on vhs.vhs_id = details.vhs_id join section on section.sec_id=details.sec_id join associated_with as aw on vhs.vhs_id=aw.vhs_id join employee on employee.employee_id=aw.employee_id
+
+1(a)	select * from vetenary_hospital_section as vhs join looks_after on vhs.vhs_id=looks_after.vhs_id join animal on animal.animal_id=looks_after.animal_id
+
+2.	select * from zoo_animal_nutrition_branch as zanb join sub_branch_details as sbd on zanb.zanb_id=sbd.zanb_id join zoo_nutrition_subbranch as zns on zns.zns_id=sbd.zns_id join associated_with_nutrition as awn on zanb.zanb_id=awn.zanb_id join employee on employee.employee_id=awn.employee_id 
+
+2.a)	select * from zoo_animal_nutrition_branch as zanb join health on zanb.zanb_id=health.zanb_id join animal on animal.animal_id =health.animal_id
+
+
+3.	select * from security_branch as sb join control on sb.sb_id=control.sb_id join security_control as sc on sc.sc_id=control.sc_id join security on sb.sb_id=security.sb_id join employee on employee.employee_id=security.employee_id
+
+4.	select * from R&D_section join R&D_details on R&D_section.area_name=R&D_detais.area_name join R&D_subsection_details as rdsd on rdsd.rdsd_id=R&D_details.rdsd_id join training&research as tr on R&D_section.area_name=tr.area_name join employee on employee.employee_id=tr.employee_id
+
+4.a)	select * from R&D_section join R&D_details join conduct on conduct.area_name=R&D_section.area_name 
+join course on course.course_code=conduct.course_code join training&research as tr on R&D_section.area_name=tr.area_name join employee on employee.employee_id=tr.employee_id
+
+5.	select * from account_section as acc join income_from_ticket as ift on acc.account_id=ift.account_id join ticketing on ticketing.counter_no=ift.counter_no
+
+6.	select * from account_section as acc join income_from_boat_riding as ifbr on acc.account_id=ifbr.account_id join boat_riding on boat_riding.boat_no=ifbr.boat_no
+
+
+7.	select *from boat_riding join entertainment_from_boat_riding on boat_riding.boat_no=entertainment_from_boat_riding.boat_no join entertainment on entertainment.entertainment_id=entertainment_from_boat_riding.entertainment_id
+
+8.	select *from account_section acc join accountant on acc.account_id=accountant.account_id join employee on employee.employee_id=accountant.employee_id
+
+
+9.	select *from account_section as acc join income_from_ps as ifps on acc.account_id=ifps.account_id join picnic_spot on picnic_spot.spot_no=ifps.spot_no
+
+10. select *from  animal natural join works_on natural join employee natural join caging
+natural join cage where cage.cage_no=$cage_no
+
+11 SELECT animal.animal_id as animal_id,animal.E_name as E_Name,food.food_name as food_name FROM animal join fooding using(animal_id) join food using(food_id) where to_char(food.food_date,"dd-mm-yyyy")=to_char(sysdate,"dd-mm-yyy")
+12.select * from animal join fooding using (animal_id) join food using (food_id) 
+13. select *animal join classification using (animal_id)join catagory using (class_name)
+
+14 select * from animal join caging using (animal_id) join cage using (cage_no) join inclusion using (cage_no) join addition using(addition_no)
+
+15.	 select * from animal join caging using (animal_id) join cage using (cage_no) join exclusion using (cage_no) join substraction using(substraction_no).
+(50) SELECT * FROM Musium join Income_From_Musium on Musium.Musium_Id=Income_From_Musium.Musium_Id join Account_Section on Income_From_Musium.Account_Id=Account_Section.Account_Id
+
+(49) SELECT * FROM Musium join Related_With_Musium on Musium.Musium_Id=Related_With_Musium.Musium_Id join Employee on Employee.Employee_Id=Related_With_Musium.Employee_Id
+
+(48) SELECT * FROM Musium join Musium_Schedule on Musium.Musium_Id=Musium_Schedule.Musium_Id join Entertainment on Musium_Schedule.Entertainment_Id=Entertainment.Entertainment_Id
+
+(47) SELECT * FROM Entertainment join Entertainment_From_Animal on Entertainment.Entertainment_Id=Entertainment_From_Animal.Entertainment_Id join Animal on Animal.Animal_Id=Entertainment_From_Animal.Animal_Id
+
+(46) SELECT * FROM Entertainment join Picnic_Spot_Schedule on Entertainment.Entertainment_Id=Picnic_Spot_Schedule.Entertainment_Id join Picnic_Spot on Picnic_Spot.Spot_No=Picnic_Spot_Schedule.Spot_No
+
+(45) SELECT * FROM Entertainment join Entertainment_From_Angling on Entertainment.Entertainment_Id=Entertainment_From_Angling.Entertainment_Id join Angling on Angling.Spot_No=Entertainment_From_Angling.Spot_No
+
+(44) SELECT * FROM Employee join Related_With_Angling on Employee.Employee_Id=Related_With_Angling.Employee_Id join Angling on Angling.Spot_No=Related_With_Angling.Spot_No
+
+(43) SELECT * FROM Angling join Income_From_Angling on Angling.Spot_No=Income_From_Angling.Spot_No join Account_Section on Account_Section.Account_Id=Income_From_Angling.Account_Id
+
+(42) SELECT * FROM Angling join Fish_Treatment on Angling.Spot_No=Fish_Treatment.Spot_No join Vaternary_Hospital_Section on Vaternary_Hospital_Section.VHS_Id=Fish_Treatment.VHS_Id
+
+(41) SELECT * FROM Employee join Related_With_Picnic_Spot on Employee.Employee_Id=Related_With_Picnic_Spot.Employee_Id join Picnic_Spot on Related_With_Picnic_Spot.Spot_No=Picnic_Spot.Spot_No
+
+(40) SELECT * FROM Employee join Related_With_Boat_Riding on Employee.Employee_Id=Related_With_Boat_Riding.Employee_Id join Boat_Riding on Related_With_Boat_Riding.Boat_No=Boat_Riding.Boat_No
+
+(39) SELECT * FROM Employee join works_for using(Employee_Id) join animal using(animal_id) join caging using(animal_id) join cage using(cage_no)

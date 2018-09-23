@@ -1,0 +1,61 @@
+CREATE TABLE Phone_No
+(
+Employee_Id VARCHAR2(20),
+Phone_No VARCHAR2(20),
+CONSTRAINT Phone_Employee_Id_pk FOREIGN KEY(Employee_Id) REFERENCES Employee(Employee_Id),
+CONSTRAINT phone_Phone_No_uk UNIQUE(Phone_No)
+);
+
+INSERT INTO Phone_No(Employee_Id,Phone_No)
+VALUES('E-AD0001','0175871273');
+
+INSERT INTO Phone_No(Employee_Id,Phone_No)
+VALUES('E-AD0001','0185871283');
+
+INSERT INTO Phone_No(Employee_Id,Phone_No)
+VALUES('E-AD0001','0155851278');
+
+INSERT INTO Phone_No(Employee_Id,Phone_No)
+VALUES('E-AD0002','0175841273');
+
+INSERT INTO Phone_No(Employee_Id,Phone_No)
+VALUES('E-AD0001','0155071570');
+
+INSERT INTO Phone_No(Employee_Id,Phone_No)
+VALUES('E-AD0003','0155871073');
+
+INSERT INTO Phone_No(Employee_Id,Phone_No)
+VALUES('E-BR0001','01558737429');
+
+INSERT INTO Phone_No(Employee_Id,Phone_No)
+VALUES('E-BR0002','01758778373');
+
+INSERT INTO Phone_No(Employee_Id,Phone_No)
+VALUES('E-BR0003','01976312073');
+
+INSERT INTO Phone_No(Employee_Id,Phone_No)
+VALUES('E-BR0004','01558734429');
+
+INSERT INTO Phone_No(Employee_Id,Phone_No)
+VALUES('E-BR0005','01758478373');
+
+INSERT INTO Phone_No(Employee_Id,Phone_No)
+VALUES('E-BR0006','019745312073');
+
+INSERT INTO Phone_No(Employee_Id,Phone_No)
+VALUES('E-BR0007','01558737859');
+
+INSERT INTO Phone_No(Employee_Id,Phone_No)
+VALUES('E-BR0008','01758778343');
+
+INSERT INTO Phone_No(Employee_Id,Phone_No)
+VALUES('E-BR0009','01976386073');
+
+INSERT INTO Phone_No(Employee_Id,Phone_No)
+VALUES('E-BR0010','01558734529');
+
+INSERT INTO Phone_No(Employee_Id,Phone_No)
+VALUES('E-BR0011','01758775473');
+
+INSERT INTO Phone_No(Employee_Id,Phone_No)
+VALUES('E-BR0012','01976312023');
